@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
+import profilePic from '../public/Artwork10.JPEG';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,6 +17,14 @@ export default function Home() {
       </Head>
       <main>
         <h1>Ishan's EPK</h1>
+        <Image
+          src={profilePic}
+          alt='Picture of the author'
+          width={500}
+          height={500}
+          blurDataURL='data:...'
+          placeholder='blur' // Optional blur-up while loading
+        />
       </main>
     </>
   );
