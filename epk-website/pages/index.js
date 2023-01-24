@@ -1,10 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
 import profilePic from '../public/Artwork1.JPEG';
-
-const inter = Inter({ subsets: ['latin'] });
+import Nav from '@/components/Nav';
 
 export default function Home() {
   return (
@@ -16,8 +14,9 @@ export default function Home() {
         <link rel='shortcut icon' href='./icon.png' />
       </Head>
       <main>
+        <Nav />
         <h1>Ishan's EPK</h1>
-        <Image src={profilePic} alt='Picture of the author' width={500} />
+        <Image src={profilePic} alt='Picture of Ishan' width={500} />
       </main>
     </>
   );
