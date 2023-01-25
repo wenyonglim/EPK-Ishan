@@ -1,7 +1,7 @@
 import React from 'react';
 
 const nav = () => {
-  return <div>Nav Bar</div>;
+  return <div>Electronic Press Kit</div>;
 };
 
 export default nav;
