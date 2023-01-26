@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main>
         <Nav />
-        <h1>Ishan's EPK</h1>
+        <h1 className='text-3xl font-bold underline'>Hello world!</h1>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <Image src={profilePic} alt='Picture of Ishan' width={500} />
         </motion.div>
