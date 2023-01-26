@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css';
 import profilePic from '../public/Artwork1.JPEG';
 import Nav from '@/components/Nav';
 import { motion } from 'framer-motion';
+import Tab from '@/components/Tab';
 
 export default function Home() {
   return (
@@ -15,11 +16,13 @@ export default function Home() {
         <link rel='shortcut icon' href='./icon.png' />
       </Head>
       <main>
-        <Nav />
-        <h1 className='text-3xl font-bold underline'>Hello world!</h1>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Image src={profilePic} alt='Picture of Ishan' width={500} />
-        </motion.div>
+        <div className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900'>
+          <Tab />
+          <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <Image src={profilePic} alt='Picture of Ishan' width={200} />
+          </motion.div>
+        </div>
       </main>
     </>
   );
