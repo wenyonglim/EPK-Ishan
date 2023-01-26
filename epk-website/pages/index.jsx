@@ -4,7 +4,6 @@ import styles from '@/styles/Home.module.css';
 import profilePic from '../public/Artwork1.JPEG';
 import Nav from '@/components/Nav';
 import { motion } from 'framer-motion';
-import { Button } from '@nextui-org/react';
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <Image src={profilePic} alt='Picture of Ishan' width={500} />
         </motion.div>
-        <Button>Click me</Button>;
       </main>
     </>
   );
