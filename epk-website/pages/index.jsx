@@ -16,12 +16,8 @@ export default function Home() {
         <link rel='shortcut icon' href='./icon.png' />
       </Head>
       <main>
-        <div className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900'>
+        <div className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 flex justify-center'>
           <Tab />
-          <h1 className='text-3xl font-bold underline'>Hello world!</h1>
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <Image src={profilePic} alt='Picture of Ishan' width={200} />
-          </motion.div>
         </div>
       </main>
     </>
