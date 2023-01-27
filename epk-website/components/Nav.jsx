@@ -1,6 +1,6 @@
 import { Navbar, Button, Link, Text } from '@nextui-org/react';
-import { Layout } from '../pages/Layout.js';
-import { AcmeLogo } from '../pages/AcmeLogo.js';
+import { Layout } from './Layout.js';
+import { AcmeLogo } from './AcmeLogo.js';
 import { useTheme } from '@nextui-org/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
