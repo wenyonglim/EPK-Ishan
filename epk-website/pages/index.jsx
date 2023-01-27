@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
-import profilePic from '../public/Artwork1.JPEG';
 import Nav from '@/components/Nav';
 import { motion } from 'framer-motion';
 
