@@ -14,10 +14,8 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='shortcut icon' href='./icon.png' />
       </Head>
-      <main className='bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
-        <div>
-          <h1 className='text-white text-xl'>Placeholder</h1>
-        </div>
+      <main>
+        <Nav></Nav>
       </main>
     </>
   );
