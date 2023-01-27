@@ -16,7 +16,7 @@ export default function Home() {
         <link rel='shortcut icon' href='./icon.png' />
       </Head>
       <main>
-        <div className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 flex justify-center'>
+        <div className='bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
           <Tab />
         </div>
       </main>
