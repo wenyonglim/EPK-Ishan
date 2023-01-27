@@ -4,7 +4,6 @@ import styles from '@/styles/Home.module.css';
 import profilePic from '../public/Artwork1.JPEG';
 import Nav from '@/components/Nav';
 import { motion } from 'framer-motion';
-import Tab from '@/components/Tab';
 
 export default function Home() {
   return (
@@ -15,9 +14,9 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='shortcut icon' href='./icon.png' />
       </Head>
-      <main>
-        <div className='bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
-          <Tab />
+      <main className='bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
+        <div>
+          <h1 className='text-white text-xl'>Placeholder</h1>
         </div>
       </main>
     </>
