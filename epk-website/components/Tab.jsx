@@ -5,6 +5,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
+// testing socials Tab
+
 export default function Social() {
   let [categories] = useState({
     Recent: [
@@ -122,7 +124,6 @@ export default function Social() {
     </div>
   );
 }
-
 
 export async function getStaticProps() {
   const res = await fetch('https://www.googleapis.com/youtube/v3');
