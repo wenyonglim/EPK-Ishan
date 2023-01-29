@@ -1,32 +1,28 @@
 import '@/styles/globals.css';
-import { createTheme, NextUIProvider } from '@nextui-org/react';
+import { createTheme, NextUIProvider, Text } from '@nextui-org/react';
 
 export default function App({ Component, pageProps }) {
   return (
     // 2. Use at the root of your app
-    <NextUIProvider>
+    <NextUIProvider theme={myDarkTheme}>
       <Component {...pageProps} />
     </NextUIProvider>
   );
 }
 
 // Custom theme and pass  custom theme values
-const theme = createTheme({
-  type: 'dark', // it could be "light" or "dark"
+const myDarkTheme = createTheme({
+  type: 'dark',
   theme: {
     colors: {
-      primary: '#4ADE7B',
-      secondary: '#F9CB80',
-      error: '#FCC5D8',
+      // brand colors
+      background: '#1d1d1d',
+      text: '#fff',
+      // you can also create your own color
+      myDarkColor: '#ff4ecd',
+      // ...  more colors
     },
+    space: {},
+    fonts: {},
   },
 });
-
-// ^ Pass the new `theme`` to the `NextUIProvider`
-// function MyApp({ Component, pageProps }) {
-//   return (
-//     <NextUIProvider theme={theme}>
-//       <Component {...pageProps} />
-//     </NextUIProvider>
-//   )
-// }
