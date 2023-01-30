@@ -2,7 +2,7 @@ import Spotify from './Spotify';
 import { Text } from '@nextui-org/react';
 const Music = () => {
   return (
-    <div>
+    <div className='overflow-auto'>
       <Spotify />
     </div>
   );
