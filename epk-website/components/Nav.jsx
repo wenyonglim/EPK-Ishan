@@ -3,6 +3,7 @@ import { Layout } from './Layout.js';
 import { AcmeLogo } from './AcmeLogo.js';
 import { useTheme } from '@nextui-org/react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { FaApple, FaSpotify, FaYoutube } from 'react-icons/fa';
 
 const nav = () => {
   const collapseItems = ['About', 'Music', 'Media', 'Press Photos'];
@@ -26,9 +27,19 @@ const nav = () => {
         <Navbar.Content>
           {/* // ! Social Media Links */}
           <Navbar.Item>
-            <Button auto as={Link} href='#'>
-              Sign Up
-            </Button>
+            <Link>
+              <FaApple />
+            </Link>
+          </Navbar.Item>
+          <Navbar.Item>
+            <Link>
+              <FaSpotify />
+            </Link>
+          </Navbar.Item>
+          <Navbar.Item>
+            <Link>
+              <FaYoutube />
+            </Link>
           </Navbar.Item>
           <Navbar.Item>
             <Button auto as={Link} href='#'>
