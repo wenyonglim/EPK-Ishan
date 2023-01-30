@@ -8,6 +8,8 @@ export const Content = () => (
   <div>
     <Hero />
     <About />
-    <Carousel />
+    <div className='md:hidden'>
+      <Carousel />
+    </div>
   </div>
 );
