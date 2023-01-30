@@ -31,7 +31,7 @@ const About = () => {
         was destined to have her voice heard.
       </Text>
       <Spacer y={1} />
-
+    
       <Text size='$lg'>
         Ishan attains a plethora of musical influences, ranging from the
         greatest divas; Lady Gaga, Beyoncé, Erykah Badu, Whitney Houston & Sade
