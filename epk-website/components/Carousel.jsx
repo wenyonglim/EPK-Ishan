@@ -1,5 +1,80 @@
+import Image from 'next/image';
+import artwork1 from '../public/Artwork3.jpeg';
+import artwork2 from '../public/Artwork3.jpeg';
+import artwork3 from '../public/Artwork3.jpeg';
+import artwork4 from '../public/Artwork3.jpeg';
+import artwork5 from '../public/Artwork3.jpeg';
+import artwork6 from '../public/Artwork3.jpeg';
+import artwork7 from '../public/Artwork3.jpeg';
+
 const Carousel = () => {
-  return <div>Enter</div>;
+  return (
+    <div className='carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box'>
+      <div className='carousel-item'>
+        <Image
+          src={artwork3}
+          width={300}
+          height={450}
+          alt='Ishan Artwork'
+          className='rounded-box'
+        />
+      </div>
+      <div className='carousel-item'>
+        <Image
+          src={artwork3}
+          width={300}
+          height={450}
+          alt='Ishan Artwork'
+          className='rounded-box'
+        />
+      </div>
+      <div className='carousel-item'>
+        <Image
+          src={artwork3}
+          width={300}
+          height={450}
+          alt='Ishan Artwork'
+          className='rounded-box'
+        />
+      </div>
+      <div className='carousel-item'>
+        <Image
+          src={artwork3}
+          width={300}
+          height={450}
+          alt='Ishan Artwork'
+          className='rounded-box'
+        />
+      </div>
+      <div className='carousel-item'>
+        <Image
+          src={artwork3}
+          width={300}
+          height={450}
+          alt='Ishan Artwork'
+          className='rounded-box'
+        />
+      </div>
+      <div className='carousel-item'>
+        <Image
+          src={artwork3}
+          width={300}
+          height={450}
+          alt='Ishan Artwork'
+          className='rounded-box'
+        />
+      </div>
+      <div className='carousel-item'>
+        <Image
+          src={artwork3}
+          width={300}
+          height={450}
+          alt='Ishan Artwork'
+          className='rounded-box'
+        />
+      </div>
+    </div>
+  );
 };
 
 export default Carousel;
