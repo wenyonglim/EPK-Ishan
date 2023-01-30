@@ -6,7 +6,7 @@ import artwork4 from '../public/Artwork4.jpeg';
 import artwork5 from '../public/Artwork5.jpeg';
 import artwork6 from '../public/Artwork6.jpeg';
 import artwork7 from '../public/Artwork7.jpeg';
-import artwork8 from '../public/Artwork8.jpeg';
+import artwork8 from '../public/Artwork8.jpg';
 import { Button } from '@nextui-org/react';
 
 const Carousel = () => {
