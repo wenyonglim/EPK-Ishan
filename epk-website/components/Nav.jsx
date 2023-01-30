@@ -27,7 +27,6 @@ const nav = () => {
 
         {/* Links for Mobile */}
         <Navbar.Content>
-          {/* // ! Social Media Links */}
           <Navbar.Item>
             <Link
               target='_blank'

@@ -7,6 +7,7 @@ import artwork5 from '../public/Artwork5.jpeg';
 import artwork6 from '../public/Artwork6.jpeg';
 import artwork7 from '../public/Artwork7.jpeg';
 import artwork8 from '../public/Artwork8.JPEG';
+import { Button } from '@nextui-org/react';
 
 const Carousel = () => {
   return (
@@ -32,15 +33,6 @@ const Carousel = () => {
       <div className='carousel-item'>
         <Image
           src={artwork3}
-          width={300}
-          height={450}
-          alt='Ishan Artwork'
-          className='rounded-box'
-        />
-      </div>
-      <div className='carousel-item'>
-        <Image
-          src={artwork4}
           width={300}
           height={450}
           alt='Ishan Artwork'
