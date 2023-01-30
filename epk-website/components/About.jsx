@@ -11,6 +11,7 @@ const About = () => {
           textGradient: '45deg, $blue600 -20%, $pink600 50%',
         }}
         weight='bold'
+        id='About'
       >
         Ishan
       </Text>

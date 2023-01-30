@@ -17,7 +17,7 @@ export default function Home() {
         <link rel='shortcut icon' href='./icon.png' />
       </Head>
       <main>
-        <Nav></Nav>
+        <Nav />
         <Hero />
         <About />
       </main>
