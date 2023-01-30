@@ -4,6 +4,7 @@ import { Box } from './Box.jsx';
 import Hero from './Hero.jsx';
 import Carousel from '@/components/Carousel';
 import Music from './Music.jsx';
+import Media from './Media.jsx';
 
 export const Content = () => (
   <div>
@@ -13,5 +14,6 @@ export const Content = () => (
     <div className='md:hidden'>
       <Carousel />
     </div>
+    <Media />
   </div>
 );
