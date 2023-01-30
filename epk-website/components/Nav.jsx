@@ -10,7 +10,7 @@ const nav = () => {
 
   return (
     <Layout>
-      <Navbar shouldHideOnScroll isBordered variant='sticky'>
+      <Navbar isBordered variant='floating'>
         <Navbar.Brand>
           <Navbar.Toggle aria-label='toggle navigation' />
           <Text b color='inherit' className='pl-2'>
