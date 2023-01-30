@@ -29,17 +29,27 @@ const nav = () => {
         <Navbar.Content>
           {/* // ! Social Media Links */}
           <Navbar.Item>
-            <Link>
+            <Link
+              target='_blank'
+              href='https://music.apple.com/gb/artist/ishan/1450501527'
+            >
               <FaApple />
             </Link>
           </Navbar.Item>
           <Navbar.Item>
-            <Link>
+            <Link
+              target='_blank'
+              href='https://open.spotify.com/artist/31H6pWphv3pWESSd03Ifyc?si=ET8qeQCrS3KUhPfSsg9x9A'
+            >
               <FaSpotify />
             </Link>
           </Navbar.Item>
           <Navbar.Item>
-            <Link className='pr-2'>
+            <Link
+              target='_blank'
+              className='pr-2'
+              href='https://youtube.com/@sassyprincesss'
+            >
               <FaYoutube />
             </Link>
           </Navbar.Item>
