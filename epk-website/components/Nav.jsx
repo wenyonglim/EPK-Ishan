@@ -10,20 +10,22 @@ const nav = () => {
 
   return (
     <Layout>
-      <Navbar isBordered variant='sticky'>
+      <Navbar isBordered variant='floating'>
         <Navbar.Brand>
           <Navbar.Toggle aria-label='toggle navigation' />
-          <AcmeLogo />
-          <Text b color='inherit' hideIn='xs'>
+          <Text b color='inherit' className='pl-2'>
             Electronic Press Kit
           </Text>
         </Navbar.Brand>
+
+        {/* Links for Desktops */}
         <Navbar.Content enableCursorHighlight hideIn='xs' variant='underline'>
           <Navbar.Link isActive href='#'>
             Home
           </Navbar.Link>
         </Navbar.Content>
 
+        {/* Links for Mobile */}
         <Navbar.Content>
           {/* // ! Social Media Links */}
           <Navbar.Item>
@@ -37,14 +39,9 @@ const nav = () => {
             </Link>
           </Navbar.Item>
           <Navbar.Item>
-            <Link>
+            <Link className='pr-2'>
               <FaYoutube />
             </Link>
-          </Navbar.Item>
-          <Navbar.Item>
-            <Button auto as={Link} href='#'>
-              Sign Up
-            </Button>
           </Navbar.Item>
         </Navbar.Content>
 

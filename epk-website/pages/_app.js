@@ -21,6 +21,7 @@ const myDarkTheme = createTheme({
       // you can also create your own color
       myDarkColor: '#ff4ecd',
       // ...  more colors
+      link: '#B583E7',
     },
     space: {},
     fonts: {},
