@@ -1,6 +1,6 @@
 import { Navbar, Button, Link, Text } from '@nextui-org/react';
-import { Layout } from './Layout.js';
-import { AcmeLogo } from './AcmeLogo.js';
+import { Layout } from './Layout.jsx';
+import { AcmeLogo } from './AcmeLogo.jsx';
 import { useTheme } from '@nextui-org/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaApple, FaSpotify, FaYoutube } from 'react-icons/fa';
@@ -10,7 +10,7 @@ const nav = () => {
 
   return (
     <Layout>
-      <Navbar isBordered variant='floating'>
+      <Navbar shouldHideOnScroll isBordered variant='floating'>
         <Navbar.Brand>
           <Navbar.Toggle aria-label='toggle navigation' />
           <Text b color='inherit' className='pl-2'>

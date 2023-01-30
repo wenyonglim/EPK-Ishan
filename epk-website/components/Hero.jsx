@@ -4,7 +4,7 @@ import artwork3 from '../public/Artwork3.jpeg';
 const Hero = () => {
   return (
     <div>
-      <Image src={artwork3} />
+      <Image className='' src={artwork3} />
     </div>
   );
 };
