@@ -11,14 +11,26 @@ export const Content = () => (
     <Hero />
     <About />
     <Music />
-    <div className='md:hidden'>
+    <div className='md:hidden flex justify-center pt-8'>
+      <Text
+        h1
+        size={60}
+        css={{
+          textGradient: '45deg, $blue600 -20%, $pink600 50%',
+        }}
+        weight='bold'
+        id='About'
+        className='absolute'
+      >
+        Press Photos
+      </Text>
       <Carousel />
     </div>
     <Text
       h1
       size={60}
       css={{
-        textGradient: '45deg, $blue600 -20%, $pink600 50%',
+        textGradient: '5deg, $blue600 -20%, $blue600 100%',
       }}
       weight='bold'
     >
