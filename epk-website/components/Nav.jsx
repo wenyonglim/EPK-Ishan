@@ -5,17 +5,7 @@ import { useTheme } from '@nextui-org/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 const nav = () => {
-  const collapseItems = [
-    'Features',
-    'Customers',
-    'Pricing',
-    'Company',
-    'Legal',
-    'Team',
-    'Help & Feedback',
-    'Login',
-    'Sign Up',
-  ];
+  const collapseItems = ['About', 'Music', 'Media', 'Press Photos'];
 
   return (
     <Layout>
@@ -31,7 +21,6 @@ const nav = () => {
           <Navbar.Link isActive href='#'>
             Home
           </Navbar.Link>
-          <Navbar.Link href='/Contact'>Contact</Navbar.Link>
         </Navbar.Content>
 
         <Navbar.Content>
@@ -54,7 +43,7 @@ const nav = () => {
               <Link
                 color='inherit'
                 css={{
-                  minWidth: '100%',
+                  textGradient: '45deg, $blue600 -20%, $pink600 50%',
                 }}
                 href='#'
               >
