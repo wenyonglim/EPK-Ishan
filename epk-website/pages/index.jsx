@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Nav from '@/components/Nav';
 import { motion } from 'framer-motion';
+import { Link } from '@nextui-org/react';
 
 export default function Home() {
   return (

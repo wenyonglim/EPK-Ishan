@@ -5,35 +5,64 @@ import { useTheme } from '@nextui-org/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 const nav = () => {
+  const collapseItems = [
+    'Features',
+    'Customers',
+    'Pricing',
+    'Company',
+    'Legal',
+    'Team',
+    'Help & Feedback',
+    'Login',
+    'Sign Up',
+  ];
+
   return (
     <Layout>
-      <Navbar variant='floating' shouldHideOnScroll>
+      <Navbar isBordered variant='sticky'>
         <Navbar.Brand>
+          <Navbar.Toggle aria-label='toggle navigation' />
+          <AcmeLogo />
           <Text b color='inherit' hideIn='xs'>
-            ELECTRONIC PRESS KIT
+            Electronic Press Kit
           </Text>
         </Navbar.Brand>
-        <Navbar.Content hideIn='xs' variant='highlight-rounded'>
+        <Navbar.Content enableCursorHighlight hideIn='xs' variant='underline'>
           <Navbar.Link isActive href='#'>
             Home
           </Navbar.Link>
-          <Navbar.Link href='#'>Music</Navbar.Link>
-          <Navbar.Link href='#'>Press</Navbar.Link>
+          <Navbar.Link href='/Contact'>Contact</Navbar.Link>
         </Navbar.Content>
 
         <Navbar.Content>
+          {/* // ! Social Media Links */}
           <Navbar.Item>
-            <Button
-              auto
-              flat
-              as={Link}
-              href='#'
-              className='lg:hidden md:hidden'
-            >
-              <AiOutlineMenu />
+            <Button auto as={Link} href='#'>
+              Sign Up
+            </Button>
+          </Navbar.Item>
+          <Navbar.Item>
+            <Button auto as={Link} href='#'>
+              Sign Up
             </Button>
           </Navbar.Item>
         </Navbar.Content>
+
+        <Navbar.Collapse>
+          {collapseItems.map((item, index) => (
+            <Navbar.CollapseItem key={item}>
+              <Link
+                color='inherit'
+                css={{
+                  minWidth: '100%',
+                }}
+                href='#'
+              >
+                {item}
+              </Link>
+            </Navbar.CollapseItem>
+          ))}
+        </Navbar.Collapse>
       </Navbar>
     </Layout>
   );

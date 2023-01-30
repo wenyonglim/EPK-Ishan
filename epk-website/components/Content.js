@@ -3,7 +3,7 @@ import { Box } from './Box.js';
 
 export const Content = () => (
   <Box css={{ px: '$12', mt: '$8', '@xsMax': { px: '$10' } }}>
-    <Text
+    {/* <Text
       h1
       size={60}
       css={{
@@ -45,6 +45,6 @@ export const Content = () => (
       her musical facets that undoubtedly will captivate her audience
       respectively. Ishan is one to keep an eye on in 2023!
     </Text>
-    <Spacer y={1} />
+    <Spacer y={1} /> */}
   </Box>
 );
