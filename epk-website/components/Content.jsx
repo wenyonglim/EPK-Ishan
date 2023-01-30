@@ -7,7 +7,7 @@ import Music from './Music.jsx';
 import Media from './Media.jsx';
 
 export const Content = () => (
-  <div>
+  <div className='overflow-auto'>
     <Hero />
     <About />
     <Music />
