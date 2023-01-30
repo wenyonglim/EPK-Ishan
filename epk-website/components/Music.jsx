@@ -1,15 +1,21 @@
+import Spotify from './Spotify';
+import { Text } from '@nextui-org/react';
 const Music = () => {
   return (
-    <iframe
-      src='https://open.spotify.com/embed/artist/31H6pWphv3pWESSd03Ifyc?utm_source=generator'
-      width='100%'
-      className='spotify'
-      height='152'
-      frameBorder='0'
-      allowfullscreen=''
-      allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-      loading='lazy'
-    ></iframe>
+    <div>
+      <Text
+        h1
+        size={60}
+        css={{
+          textGradient: '45deg, $blue600 -20%, $pink600 50%',
+        }}
+        weight='bold'
+        id='Press Photos'
+      >
+        Music
+      </Text>
+      <Spotify />
+    </div>
   );
 };
 

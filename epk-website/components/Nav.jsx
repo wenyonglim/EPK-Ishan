@@ -6,7 +6,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { FaApple, FaSpotify, FaYoutube } from 'react-icons/fa';
 
 const nav = () => {
-  const collapseItems = ['About', 'Music', 'Media', 'Press Photos'];
+  const collapseItems = ['About', 'Music', 'Press Photos', 'Media'];
 
   return (
     <Layout>
@@ -62,7 +62,8 @@ const nav = () => {
                 css={{
                   textGradient: '45deg, $blue600 -20%, $pink600 50%',
                 }}
-                href='#'
+                href={`#${item}`}
+                onClick={console.log('Animate Navbar collapse')}
               >
                 {item}
               </Link>

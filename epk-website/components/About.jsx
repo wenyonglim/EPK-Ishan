@@ -31,14 +31,17 @@ const About = () => {
         was destined to have her voice heard.
       </Text>
       <Spacer y={1} />
-    
+
       <Text size='$lg'>
         Ishan attains a plethora of musical influences, ranging from the
         greatest divas; Lady Gaga, Beyoncé, Erykah Badu, Whitney Houston & Sade
         to the Pop Princesses of the late 2000s; Selena Gomez, Ariana Grande and
         Miley Cyrus to name a few. Her sound combined the nuances of her musical
-        influences with her own individual spin to create a blend of R&B, Pop,
-        Soul catered perfectly to Ishan’s own identity.
+        influences
+        <a id='Music'>
+          &nbsp; with her own individual spin to create a blend of R&B, Pop,
+          Soul catered perfectly to Ishan’s own identity.
+        </a>
       </Text>
       <Spacer y={1} />
       <Text size='$lg'>
