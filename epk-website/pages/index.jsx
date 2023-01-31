@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
-import Nav from '@/components/Nav';
+import NavHome from '@/components/NavHome';
 import { motion } from 'framer-motion';
 import { Link } from '@nextui-org/react';
 
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main>
         <div className=''>
-          <Nav />
+          <NavHome Home={'underline'} About={''} Press={''} Media={''} />
         </div>
         <div className=''></div>
       </main>

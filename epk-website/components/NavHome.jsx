@@ -5,8 +5,9 @@ import { useTheme } from '@nextui-org/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaApple, FaSpotify, FaYoutube } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
-const nav = () => {
+const nav = ({ Home, About, Press, Media }) => {
   const collapseItems = ['Home', 'Music', 'Press Photos', 'Media'];
   const checkHome = (item) => {
     if (item === 'Home') {
@@ -27,22 +28,22 @@ const nav = () => {
         </Navbar.Brand>
 
         {/* Links for Desktops */}
-        <Navbar.Content enableCursorHighlight hideIn='xs' variant='underline'>
+        <Navbar.Content enableCursorHighlight hideIn='xs' variant={Home}>
           <Navbar.Link isActive href='#'>
             Home
           </Navbar.Link>
         </Navbar.Content>
-        <Navbar.Content enableCursorHighlight hideIn='xs'>
+        <Navbar.Content enableCursorHighlight hideIn='xs' variant={About}>
           <Navbar.Link isActive href='#'>
             About
           </Navbar.Link>
         </Navbar.Content>
-        <Navbar.Content enableCursorHighlight hideIn='xs'>
+        <Navbar.Content enableCursorHighlight hideIn='xs' variant={Press}>
           <Navbar.Link isActive href='#'>
             Press
           </Navbar.Link>
         </Navbar.Content>
-        <Navbar.Content enableCursorHighlight hideIn='xs'>
+        <Navbar.Content enableCursorHighlight hideIn='xs' variant={Media}>
           <Navbar.Link isActive href='#'>
             Media
           </Navbar.Link>
