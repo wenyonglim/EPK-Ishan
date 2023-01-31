@@ -3,10 +3,15 @@ import media1 from '../public/Media1.jpg';
 import media2 from '../public/Media2.jpg';
 import media3 from '../public/Media3.jpg';
 import media4 from '../public/Media4.jpg';
+import { motion } from 'framer-motion';
 
 export default function Media() {
   return (
-    <div className=''>
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+    >
       <Cards
         title='I think you gotta go'
         description='Music Video'
@@ -35,6 +40,6 @@ export default function Media() {
         img={media4}
         link='https://youtu.be/JubDA4i65uA'
       />
-    </div>
+    </motion.div>
   );
 }

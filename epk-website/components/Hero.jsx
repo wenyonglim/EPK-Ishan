@@ -22,8 +22,8 @@ const Hero = () => {
         Ishan
       </Text>
       <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 100, y: 0 }}
+        initial={{ opacity: 0.2 }}
+        whileInView={{ opacity: 100 }}
         transition={{ duration: 1.61803398875 }}
       >
         <Image
