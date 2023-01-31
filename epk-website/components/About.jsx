@@ -5,13 +5,19 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <Box css={{ px: '$12', mt: '$8', '@xsMax': { px: '$10' } }}>
-      <Text size='$xl'>
-        Born and raised in London, England singer-songwriter Ishan immersed
-        herself into her artistry from a young age. Equipped with a deep passion
-        for performing and a desire to express herself through music and her
-        craft, those aspects of Ishan’s artistry began to her sculpt her into
-        the artist she is today.
-      </Text>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
+      >
+        <Text size='$xl'>
+          Born and raised in London, England singer-songwriter Ishan immersed
+          herself into her artistry from a young age. Equipped with a deep
+          passion for performing and a desire to express herself through music
+          and her craft, those aspects of Ishan’s artistry began to her sculpt
+          her into the artist she is today.
+        </Text>
+      </motion.div>
       <Spacer y={1} />
       <motion.div
         initial={{ opacity: 0, x: -20 }}

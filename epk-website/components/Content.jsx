@@ -9,11 +9,14 @@ import Footer from './Footer.jsx';
 
 export const Content = () => (
   <div>
-    <Hero />
-    <About />
+    <div className='md:flex'>
+      <Hero />
+      <About />
+    </div>
+
     <Music />
     <div id='Press Photos'></div>
-    <div className='md:hidden flex justify-center pt-8'>
+    <div className=' flex justify-center pt-8'>
       <Text
         h1
         size={60}
