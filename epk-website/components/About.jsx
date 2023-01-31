@@ -16,7 +16,7 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
       >
         <Text size='$lg'>
           Starting from Stagecoach, a performing arts network based in the UK,
@@ -30,7 +30,7 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
       >
         <Text size='$lg'>
           Ishan attains a plethora of musical influences, ranging from the
@@ -45,7 +45,7 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
       >
         <Text size='$lg'>
           After a 2019 EP release and a string of singles in 2020, Ishan is
