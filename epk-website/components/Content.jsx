@@ -5,6 +5,7 @@ import Hero from './Hero.jsx';
 import Carousel from '@/components/Carousel';
 import Music from './Music.jsx';
 import Media from './Media.jsx';
+import Footer from './Footer.jsx';
 
 export const Content = () => (
   <div className='overflow-auto'>
@@ -37,5 +38,6 @@ export const Content = () => (
       Media
     </Text>
     <Media />
+    <Footer />
   </div>
 );
