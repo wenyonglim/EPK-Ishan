@@ -71,7 +71,6 @@ const nav = () => {
                   textGradient: '45deg, $blue600 -20%, $pink600 50%',
                 }}
                 href={checkHome(item)}
-                onClick={console.log('Animate Navbar collapse')}
               >
                 {item}
               </Link>
