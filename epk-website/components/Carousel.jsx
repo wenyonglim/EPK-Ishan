@@ -9,12 +9,16 @@ import artwork7 from '../public/Artwork7.jpeg';
 import artwork8 from '../public/Artwork8.jpg';
 import { Button } from '@nextui-org/react';
 import { Text } from '@nextui-org/react';
+import { motion } from 'framer-motion';
 
 const Carousel = () => {
   return (
-    <div
+    <motion.div
       id='Media'
       className='carousel carousel-center max-w-md p-4 space-x-4 rounded-box'
+      initial={{ y: -100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 100 }}
+      transition={{ duration: 1.5 }}
     >
       <div className='carousel-item'>
         <Image
@@ -79,7 +83,7 @@ const Carousel = () => {
           className='rounded-box'
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

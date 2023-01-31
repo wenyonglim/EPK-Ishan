@@ -21,7 +21,7 @@ export const Content = () => (
         }}
         weight='bold'
         id='About'
-        className='absolute'
+        className='absolute z-50'
       >
         Press Photos
       </Text>
@@ -36,7 +36,7 @@ export const Content = () => (
           shadow
           color='secondary'
           auto
-          className='z-0'
+          className='z-50'
           css={{
             borderRadius: '$xs', // radii.xs
             border: '$space$1 solid transparent',
