@@ -26,4 +26,9 @@ html {
     font-family: 'Italiana', serif;
     font-size: 40px;
   }
+
+  .fontMedium {
+    font-family: 'Italiana', serif;
+    font-size: 28px;
+  }
 }
