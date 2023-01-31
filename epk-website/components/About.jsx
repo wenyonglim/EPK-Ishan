@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <Box css={{ px: '$12', mt: '$8', '@xsMax': { px: '$10' } }}>
-      <Text size='$xl' className='font'>
+      <Text size='$xl'>
         Born and raised in London, England singer-songwriter Ishan immersed
         herself into her artistry from a young age. Equipped with a deep passion
         for performing and a desire to express herself through music and her
@@ -14,8 +14,9 @@ const About = () => {
       </Text>
       <Spacer y={1} />
       <motion.div
-        initial={{ opacity: 0.3, scale: 0.4 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2 }}
       >
         <Text size='$lg'>
           Starting from Stagecoach, a performing arts network based in the UK,
@@ -27,8 +28,9 @@ const About = () => {
       </motion.div>
       <Spacer y={1} />
       <motion.div
-        initial={{ opacity: 0.3, scale: 0.4 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2 }}
       >
         <Text size='$lg'>
           Ishan attains a plethora of musical influences, ranging from the
@@ -41,8 +43,9 @@ const About = () => {
       </motion.div>
       <Spacer y={1} />
       <motion.div
-        initial={{ opacity: 0.3, scale: 0.4 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2 }}
       >
         <Text size='$lg'>
           After a 2019 EP release and a string of singles in 2020, Ishan is
