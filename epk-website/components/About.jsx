@@ -47,6 +47,7 @@ const About = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
       >
+        <div id='Music'></div>
         <Text size='$lg'>
           After a 2019 EP release and a string of singles in 2020, Ishan is
           gearing up to release more music in 2021. With a promising debut album

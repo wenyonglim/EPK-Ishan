@@ -10,6 +10,7 @@ const Spotify = ({ playlist }) => {
         allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
         loading='lazy'
       ></iframe>
+      <div id='Press Photos'></div>
     </div>
   );
 };

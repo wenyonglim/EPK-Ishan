@@ -14,7 +14,6 @@ import { motion } from 'framer-motion';
 const Carousel = () => {
   return (
     <motion.div
-      id='Media'
       className='carousel carousel-center max-w-md p-4 space-x-4 rounded-box'
       initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 100 }}

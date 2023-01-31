@@ -15,10 +15,10 @@ export default function Home() {
         <link rel='shortcut icon' href='./icon.png' />
       </Head>
       <main>
-        <div className='md:hidden'>
+        <div className=''>
           <Nav />
         </div>
-        <div className='sm:hidden'></div>
+        <div className=''></div>
       </main>
     </>
   );

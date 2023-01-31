@@ -33,6 +33,7 @@ export const Content = () => (
         href='https://drive.google.com/drive/folders/1EfyLZzjpIJMg-vnDGmYqp5ZNxkBCD4y8?usp=sharing'
       >
         <Button
+          id='Media'
           shadow
           color='secondary'
           auto
