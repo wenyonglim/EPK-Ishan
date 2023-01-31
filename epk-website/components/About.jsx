@@ -38,8 +38,8 @@ const About = () => {
           Sade to the Pop Princesses of the late 2000s; Selena Gomez, Ariana
           Grande and Miley Cyrus to name a few. Her sound combined the nuances
           of her musical influences with her own individual spin to create a
+          blend of R&B, Pop, Soul catered perfectly to Ishan’s own identity.
         </Text>
-        blend of R&B, Pop, Soul catered perfectly to Ishan’s own identity.
       </motion.div>
       <Spacer y={1} />
       <motion.div
