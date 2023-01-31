@@ -2,6 +2,7 @@ import { Text, Spacer } from '@nextui-org/react';
 import { Box } from './Box.jsx';
 import { motion } from 'framer-motion';
 import Carousel from './Carousel.jsx';
+import CarouselLarge from './CarouselLarge.jsx';
 
 const About = () => {
   return (
