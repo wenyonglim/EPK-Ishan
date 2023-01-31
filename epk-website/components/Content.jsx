@@ -38,17 +38,6 @@ export const Content = () => (
           border: '$space$1 solid transparent',
           color: '$pink800',
           height: '$12', // space[12]
-          boxShadow: '$md', // shadows.md
-          '&:hover': {
-            background: '$pink100',
-            color: '$pink800',
-          },
-          '&:active': {
-            background: '$pink200',
-          },
-          '&:focus': {
-            borderColor: '$pink400',
-          },
         }}
       >
         Download Press Photos
