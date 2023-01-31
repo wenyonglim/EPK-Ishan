@@ -1,4 +1,4 @@
-import { Content } from './Content.jsx';
+import { ContentHome } from './ContentHome.jsx';
 import { Box } from './Box.jsx';
 
 export const Layout = ({ children }) => (
@@ -8,6 +8,6 @@ export const Layout = ({ children }) => (
     }}
   >
     {children}
-    <Content />
+    <ContentHome />
   </Box>
 );

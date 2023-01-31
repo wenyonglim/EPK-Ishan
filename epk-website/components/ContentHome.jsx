@@ -8,7 +8,7 @@ import Media from './Media.jsx';
 import Footer from './Footer.jsx';
 import HeroLarge from './HeroLarge.jsx';
 import CarouselLarge from './CarouselLarge.jsx';
-export const Content = () => (
+export const ContentHome = () => (
   <div>
     <div className='md:flex'>
       <Hero />
