@@ -12,6 +12,7 @@ export const Content = () => (
     <Hero />
     <About />
     <Music />
+    <div id='Press Photos'></div>
     <div className='md:hidden flex justify-center pt-8'>
       <Text
         h1
