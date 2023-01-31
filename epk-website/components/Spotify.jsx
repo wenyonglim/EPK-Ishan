@@ -1,8 +1,8 @@
-const Spotify = () => {
+const Spotify = ({ playlist }) => {
   return (
     <div>
       <iframe
-        src='https://open.spotify.com/embed/artist/31H6pWphv3pWESSd03Ifyc?utm_source=generator'
+        src={playlist}
         width='100%'
         className='spotify'
         height='152'
