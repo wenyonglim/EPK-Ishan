@@ -4,6 +4,7 @@ import { Text } from '@nextui-org/react';
 import { useState } from 'react';
 
 const Hero = () => {
+  // ? needs gif image
   const [isGif, setIsGif] = useState(false);
   return (
     <div>
@@ -19,7 +20,11 @@ const Hero = () => {
       >
         Ishan
       </Text>
-      <Image src={artwork3} alt='Portrait of Ishan' />
+      <Image
+        onClick={console.log('clicked image')}
+        src={artwork3}
+        alt='Portrait of Ishan'
+      />
     </div>
   );
 };
