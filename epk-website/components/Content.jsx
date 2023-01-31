@@ -1,4 +1,4 @@
-import { Text, Spacer, Divider, Button } from '@nextui-org/react';
+import { Text, Spacer, Divider, Button, Grid } from '@nextui-org/react';
 import About from './About.jsx';
 import { Box } from './Box.jsx';
 import Hero from './Hero.jsx';
@@ -37,9 +37,10 @@ export const Content = () => (
       h1
       size={60}
       css={{
-        textGradient: '5deg, $blue600 -20%, $blue600 100%',
+        textGradient: '45deg, $purple600 -20%, $pink600 100%',
       }}
       weight='bold'
+      className='pt-12'
     >
       Media
     </Text>

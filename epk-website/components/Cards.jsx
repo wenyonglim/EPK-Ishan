@@ -10,7 +10,7 @@ export const Cards = ({ title, description, img, btn, link }) => (
       <h2 className='card-title'>{title}</h2>
       <p>{description}</p>
       <div className='card-actions justify-end'>
-        <button className='btn btn-primary' onClick={() => window.open(link)}>
+        <button className='btn btn-secondary' onClick={() => window.open(link)}>
           {btn}
         </button>
       </div>
