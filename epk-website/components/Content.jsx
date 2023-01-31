@@ -28,7 +28,10 @@ export const Content = () => (
       <Carousel />
     </div>
     <div className='flex justify-center'>
-      <a href='/downloads/file.zip' download>
+      <Link
+        target='_blank'
+        href='https://drive.google.com/drive/folders/1EfyLZzjpIJMg-vnDGmYqp5ZNxkBCD4y8?usp=sharing'
+      >
         <Button
           shadow
           color='secondary'
@@ -43,7 +46,7 @@ export const Content = () => (
         >
           Download Press Photos
         </Button>
-      </a>
+      </Link>
     </div>
 
     <Text
