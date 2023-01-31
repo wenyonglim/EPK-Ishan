@@ -29,22 +29,22 @@ const nav = ({ Home, About, Press, Media }) => {
 
         {/* Links for Desktops */}
         <Navbar.Content enableCursorHighlight hideIn='xs' variant={Home}>
-          <Navbar.Link isActive href='#'>
+          <Navbar.Link isActive href='/'>
             Home
           </Navbar.Link>
         </Navbar.Content>
         <Navbar.Content enableCursorHighlight hideIn='xs' variant={About}>
-          <Navbar.Link isActive href='#'>
+          <Navbar.Link isActive href='/About'>
             About
           </Navbar.Link>
         </Navbar.Content>
         <Navbar.Content enableCursorHighlight hideIn='xs' variant={Press}>
-          <Navbar.Link isActive href='#'>
+          <Navbar.Link isActive href='/Press'>
             Press
           </Navbar.Link>
         </Navbar.Content>
         <Navbar.Content enableCursorHighlight hideIn='xs' variant={Media}>
-          <Navbar.Link isActive href='#'>
+          <Navbar.Link isActive href='/Media'>
             Media
           </Navbar.Link>
         </Navbar.Content>
