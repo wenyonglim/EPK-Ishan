@@ -9,9 +9,9 @@ const About = () => {
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className='lg:pt-10'
+        className='lg:pt-20'
       >
-        <Text size='$xl'>
+        <Text size='$xl' className='fontLarge'>
           Born and raised in London, England singer-songwriter Ishan immersed
           herself into her artistry from a young age. Equipped with a deep
           passion for performing and a desire to express herself through music

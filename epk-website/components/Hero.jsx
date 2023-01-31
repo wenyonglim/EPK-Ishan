@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import artwork3 from '../public/Artwork3.jpeg';
 import { Text } from '@nextui-org/react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import HeroImage from './HeroImage';
 
 const Hero = () => {
   // ? needs gif image
@@ -21,18 +21,7 @@ const Hero = () => {
       >
         Ishan
       </Text>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 100 }}
-        transition={{ duration: 1.61803398875 }}
-        className='lg:hidden'
-      >
-        <Image
-          onClick={console.log('clicked image')}
-          src={artwork3}
-          alt='Portrait of Ishan'
-        />
-      </motion.div>
+      <HeroImage />
     </div>
   );
 };

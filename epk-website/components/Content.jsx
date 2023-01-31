@@ -10,7 +10,6 @@ import HeroLarge from './HeroLarge.jsx';
 export const Content = () => (
   <div>
     <div className='md:flex'>
-      <HeroLarge />
       <Hero />
       <About />
     </div>
