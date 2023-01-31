@@ -17,34 +17,36 @@ const About = () => {
         the artist she is today.
       </Text>
       <Spacer y={1} />
-      <Text size='$lg'>
-        Starting from Stagecoach, a performing arts network based in the UK,
-        growing up Ishan was always her own local superstar in her own right.
-        From being the star at numerous plays, being the queen of karaoke in her
-        household, writing songs at every opportunity from the age of 8, Ishan
-        was destined to have her voice heard.
-      </Text>
+      <div>
+        <Text size='$lg'>
+          Starting from Stagecoach, a performing arts network based in the UK,
+          growing up Ishan was always her own local superstar in her own right.
+          From being the star at numerous plays, being the queen of karaoke in
+          her household, writing songs at every opportunity from the age of 8,
+          Ishan was destined to have her voice heard.
+        </Text>
+      </div>
       <Spacer y={1} />
-
-      <Text size='$lg'>
-        Ishan attains a plethora of musical influences, ranging from the
-        greatest divas; Lady Gaga, Beyoncé, Erykah Badu, Whitney Houston & Sade
-        to the Pop Princesses of the late 2000s; Selena Gomez, Ariana Grande and
-        Miley Cyrus to name a few. Her sound combined the nuances of her musical
-        influences
-        <a id='Music'>
-          &nbsp; with her own individual spin to create a blend of R&B, Pop,
-          Soul catered perfectly to Ishan’s own identity.
-        </a>
-      </Text>
+      <div>
+        <Text size='$lg'>
+          Ishan attains a plethora of musical influences, ranging from the
+          greatest divas; Lady Gaga, Beyoncé, Erykah Badu, Whitney Houston &
+          Sade to the Pop Princesses of the late 2000s; Selena Gomez, Ariana
+          Grande and Miley Cyrus to name a few. Her sound combined the nuances
+          of her musical influences with her own individual spin to create a
+        </Text>
+        blend of R&B, Pop, Soul catered perfectly to Ishan’s own identity.
+      </div>
       <Spacer y={1} />
-      <Text size='$lg'>
-        After a 2019 EP release and a string of singles in 2020, Ishan is
-        gearing up to release more music in 2021. With a promising debut album
-        in the works set to be released later on in 2022 destined to display a
-        blend of her musical facets that undoubtedly will captivate her audience
-        respectively. Ishan is one to keep an eye on in 2023!
-      </Text>
+      <div>
+        <Text size='$lg'>
+          After a 2019 EP release and a string of singles in 2020, Ishan is
+          gearing up to release more music in 2021. With a promising debut album
+          in the works set to be released later on in 2022 destined to display a
+          blend of her musical facets that undoubtedly will captivate her
+          audience respectively. Ishan is one to keep an eye on in 2023!
+        </Text>
+      </div>
       <Spacer y={1} />
     </Box>
   );

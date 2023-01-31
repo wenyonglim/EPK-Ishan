@@ -4,6 +4,7 @@ import { AcmeLogo } from './AcmeLogo.jsx';
 import { useTheme } from '@nextui-org/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaApple, FaSpotify, FaYoutube } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const nav = () => {
   const collapseItems = ['Home', 'Music', 'Press Photos', 'Media'];

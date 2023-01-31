@@ -8,29 +8,31 @@ const Hero = () => {
   // ? needs gif image
   const [isGif, setIsGif] = useState(false);
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 100 }}
-      transition={{ duration: 2 }}
-    >
+    <div>
       <Text
         h1
         size={70}
         css={{
           textGradient: '45deg, $blue600 -20%, $pink600 50%',
         }}
-        className='pl-8 absolute'
+        className='pl-8 absolute z-50'
         weight='bold'
         id='About'
       >
         Ishan
       </Text>
-      <Image
-        onClick={console.log('clicked image')}
-        src={artwork3}
-        alt='Portrait of Ishan'
-      />
-    </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 100, y: 0 }}
+        transition={{ duration: 1.61803398875 }}
+      >
+        <Image
+          onClick={console.log('clicked image')}
+          src={artwork3}
+          alt='Portrait of Ishan'
+        />
+      </motion.div>
+    </div>
   );
 };
 
