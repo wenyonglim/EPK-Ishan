@@ -9,6 +9,7 @@ const About = () => {
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
+        className='lg:pt-10'
       >
         <Text size='$xl'>
           Born and raised in London, England singer-songwriter Ishan immersed

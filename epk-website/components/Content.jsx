@@ -6,17 +6,18 @@ import Carousel from '@/components/Carousel';
 import Music from './Music.jsx';
 import Media from './Media.jsx';
 import Footer from './Footer.jsx';
-
+import HeroLarge from './HeroLarge.jsx';
 export const Content = () => (
   <div>
     <div className='md:flex'>
+      <HeroLarge />
       <Hero />
       <About />
     </div>
 
     <Music />
     <div id='Press Photos'></div>
-    <div className=' flex justify-center pt-8'>
+    <div className='flex justify-center pt-8'>
       <Text
         h1
         size={60}
