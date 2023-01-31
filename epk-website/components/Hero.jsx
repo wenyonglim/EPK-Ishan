@@ -15,7 +15,7 @@ const Hero = () => {
         css={{
           textGradient: '45deg, $blue600 -20%, $pink600 50%',
         }}
-        className='pl-8 absolute z-50 md:left-0.5'
+        className='pl-8 absolute z-50 md:left-0.5 md:static'
         weight='bold'
         id='About'
       >

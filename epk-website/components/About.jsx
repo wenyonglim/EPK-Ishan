@@ -1,6 +1,7 @@
 import { Text, Spacer } from '@nextui-org/react';
 import { Box } from './Box.jsx';
 import { motion } from 'framer-motion';
+import Carousel from './Carousel.jsx';
 
 const About = () => {
   return (
@@ -20,6 +21,9 @@ const About = () => {
         </Text>
       </motion.div>
       <Spacer y={1} />
+      <div>
+        <Carousel />
+      </div>
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
