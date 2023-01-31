@@ -8,7 +8,11 @@ const Hero = () => {
   // ? needs gif image
   const [isGif, setIsGif] = useState(false);
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 100 }}
+      transition={{ duration: 2 }}
+    >
       <Text
         h1
         size={70}
@@ -26,7 +30,7 @@ const Hero = () => {
         src={artwork3}
         alt='Portrait of Ishan'
       />
-    </div>
+    </motion.div>
   );
 };
 
