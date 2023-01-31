@@ -1,4 +1,4 @@
-import { Text, Spacer, Divider, Button, Grid } from '@nextui-org/react';
+import { Text, Spacer, Divider, Button, Grid, Link } from '@nextui-org/react';
 import About from './About.jsx';
 import { Box } from './Box.jsx';
 import Hero from './Hero.jsx';
@@ -28,20 +28,22 @@ export const Content = () => (
       <Carousel />
     </div>
     <div className='flex justify-center'>
-      <Button
-        shadow
-        color='secondary'
-        auto
-        className='z-0'
-        css={{
-          borderRadius: '$xs', // radii.xs
-          border: '$space$1 solid transparent',
-          color: '$pink800',
-          height: '$12', // space[12]
-        }}
-      >
-        Download Press Photos
-      </Button>
+      <a href='/downloads/file.zip' download>
+        <Button
+          shadow
+          color='secondary'
+          auto
+          className='z-0'
+          css={{
+            borderRadius: '$xs', // radii.xs
+            border: '$space$1 solid transparent',
+            color: '$pink800',
+            height: '$12', // space[12]
+          }}
+        >
+          Download Press Photos
+        </Button>
+      </a>
     </div>
 
     <Text
