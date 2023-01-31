@@ -1,5 +1,6 @@
 import { Text, Spacer } from '@nextui-org/react';
 import { Box } from './Box.jsx';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -17,7 +18,10 @@ const About = () => {
         the artist she is today.
       </Text>
       <Spacer y={1} />
-      <div>
+      <motion.div
+        initial={{ opacity: 0.3, scale: 0.4 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+      >
         <Text size='$lg'>
           Starting from Stagecoach, a performing arts network based in the UK,
           growing up Ishan was always her own local superstar in her own right.
@@ -25,9 +29,12 @@ const About = () => {
           her household, writing songs at every opportunity from the age of 8,
           Ishan was destined to have her voice heard.
         </Text>
-      </div>
+      </motion.div>
       <Spacer y={1} />
-      <div>
+      <motion.div
+        initial={{ opacity: 0.3, scale: 0.4 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+      >
         <Text size='$lg'>
           Ishan attains a plethora of musical influences, ranging from the
           greatest divas; Lady Gaga, Beyoncé, Erykah Badu, Whitney Houston &
@@ -36,9 +43,12 @@ const About = () => {
           of her musical influences with her own individual spin to create a
         </Text>
         blend of R&B, Pop, Soul catered perfectly to Ishan’s own identity.
-      </div>
+      </motion.div>
       <Spacer y={1} />
-      <div>
+      <motion.div
+        initial={{ opacity: 0.3, scale: 0.4 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+      >
         <Text size='$lg'>
           After a 2019 EP release and a string of singles in 2020, Ishan is
           gearing up to release more music in 2021. With a promising debut album
@@ -46,7 +56,7 @@ const About = () => {
           blend of her musical facets that undoubtedly will captivate her
           audience respectively. Ishan is one to keep an eye on in 2023!
         </Text>
-      </div>
+      </motion.div>
       <Spacer y={1} />
     </Box>
   );
