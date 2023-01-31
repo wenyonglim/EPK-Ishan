@@ -28,7 +28,29 @@ export const Content = () => (
       <Carousel />
     </div>
     <div className='flex justify-center'>
-      <Button shadow color='secondary' auto>
+      <Button
+        shadow
+        color='secondary'
+        auto
+        css={{
+          borderRadius: '$xs', // radii.xs
+          border: '$space$1 solid transparent',
+          background: '$pink800', // colors.pink800
+          color: '$pink800',
+          height: '$12', // space[12]
+          boxShadow: '$md', // shadows.md
+          '&:hover': {
+            background: '$pink100',
+            color: '$pink800',
+          },
+          '&:active': {
+            background: '$pink200',
+          },
+          '&:focus': {
+            borderColor: '$pink400',
+          },
+        }}
+      >
         Download Press Photos
       </Button>
     </div>
