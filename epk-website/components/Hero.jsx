@@ -15,7 +15,7 @@ const Hero = () => {
         css={{
           textGradient: '45deg, $blue600 -20%, $pink600 50%',
         }}
-        className='pl-8 absolute z-50'
+        className='pl-8 absolute md:static z-50'
         weight='bold'
         id='About'
       >
@@ -25,6 +25,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 100 }}
         transition={{ duration: 1.61803398875 }}
+        className='lg:hidden'
       >
         <Image
           onClick={console.log('clicked image')}

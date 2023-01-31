@@ -20,7 +20,7 @@ const nav = () => {
     <Layout>
       <Navbar isBordered variant='floating'>
         <Navbar.Brand>
-          <Navbar.Toggle aria-label='toggle navigation' />
+          <Navbar.Toggle aria-label='toggle navigation' className='md:hidden' />
           <Text b color='inherit' className='pl-2'>
             Electronic Press Kit
           </Text>
