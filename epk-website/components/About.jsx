@@ -4,17 +4,6 @@ import { Box } from './Box.jsx';
 const About = () => {
   return (
     <Box css={{ px: '$12', mt: '$8', '@xsMax': { px: '$10' } }}>
-      <Text
-        h1
-        size={60}
-        css={{
-          textGradient: '45deg, $blue600 -20%, $pink600 50%',
-        }}
-        weight='bold'
-        id='About'
-      >
-        Ishan
-      </Text>
       <Text size='$lg'>
         Born and raised in London, England singer-songwriter Ishan immersed
         herself into her artistry from a young age. Equipped with a deep passion
