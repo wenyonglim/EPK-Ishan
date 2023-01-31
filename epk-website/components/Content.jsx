@@ -32,10 +32,10 @@ export const Content = () => (
         shadow
         color='secondary'
         auto
+        className='z-0'
         css={{
           borderRadius: '$xs', // radii.xs
           border: '$space$1 solid transparent',
-          background: '$pink800', // colors.pink800
           color: '$pink800',
           height: '$12', // space[12]
           boxShadow: '$md', // shadows.md
