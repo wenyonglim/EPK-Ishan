@@ -15,6 +15,11 @@ const myDarkTheme = createTheme({
   type: 'dark',
   theme: {
     colors: {
+      primaryBorder: '$green500',
+      primaryBorderHover: '$green600',
+      primarySolidHover: '$green700',
+      primarySolidContrast: '$white',
+      primaryShadow: '$green500',
       // brand colors
       background: '#1d1d1d',
       text: '#fff',
