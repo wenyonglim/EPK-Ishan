@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .spotify {
-  border-radius: 12px;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 667px) {
