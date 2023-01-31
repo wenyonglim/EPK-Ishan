@@ -8,7 +8,7 @@ import Media from './Media.jsx';
 import Footer from './Footer.jsx';
 
 export const Content = () => (
-  <div className='overflow-auto'>
+  <div>
     <Hero />
     <About />
     <Music />
