@@ -32,6 +32,21 @@ const nav = () => {
             Home
           </Navbar.Link>
         </Navbar.Content>
+        <Navbar.Content enableCursorHighlight hideIn='xs'>
+          <Navbar.Link isActive href='#'>
+            About
+          </Navbar.Link>
+        </Navbar.Content>
+        <Navbar.Content enableCursorHighlight hideIn='xs'>
+          <Navbar.Link isActive href='#'>
+            Press
+          </Navbar.Link>
+        </Navbar.Content>
+        <Navbar.Content enableCursorHighlight hideIn='xs'>
+          <Navbar.Link isActive href='#'>
+            Media
+          </Navbar.Link>
+        </Navbar.Content>
 
         {/* Links for Mobile */}
         <Navbar.Content>

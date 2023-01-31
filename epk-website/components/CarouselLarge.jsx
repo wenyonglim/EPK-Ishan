@@ -19,68 +19,45 @@ const CarouselLarge = () => {
       whileInView={{ y: 0, opacity: 100 }}
       transition={{ duration: 1.5 }}
     >
-      <div className='carousel-item'>
-        <Image
-          src={artwork1}
-          width={300}
-          height={450}
-          alt='Ishan Artwork'
-          className='rounded-box'
-        />
+      <div className='carousel w-full'>
+        <div id='item1' className='carousel-item w-full'>
+          <Image
+            src='/images/stock/photo-1625726411847-8cbb60cc71e6.jpg'
+            className='w-full'
+          />
+        </div>
+        <div id='item2' className='carousel-item w-full'>
+          <Image
+            src='/images/stock/photo-1609621838510-5ad474b7d25d.jpg'
+            className='w-full'
+          />
+        </div>
+        <div id='item3' className='carousel-item w-full'>
+          <Image
+            src='/images/stock/photo-1414694762283-acccc27bca85.jpg'
+            className='w-full'
+          />
+        </div>
+        <div id='item4' className='carousel-item w-full'>
+          <Image
+            src='/images/stock/photo-1665553365602-b2fb8e5d1707.jpg'
+            className='w-full'
+          />
+        </div>
       </div>
-      <div className='carousel-item'>
-        <Image
-          src={artwork2}
-          width={300}
-          height={450}
-          alt='Ishan Artwork'
-          className='rounded-box'
-        />
-      </div>
-      <div className='carousel-item'>
-        <Image
-          src={artwork3}
-          width={300}
-          height={450}
-          alt='Ishan Artwork'
-          className='rounded-box'
-        />
-      </div>
-      <div className='carousel-item'>
-        <Image
-          src={artwork5}
-          width={300}
-          height={450}
-          alt='Ishan Artwork'
-          className='rounded-box'
-        />
-      </div>
-      <div className='carousel-item'>
-        <Image
-          src={artwork6}
-          width={300}
-          height={450}
-          alt='Ishan Artwork'
-          className='rounded-box'
-        />
-      </div>
-      <div className='carousel-item'>
-        <Image
-          src={artwork7}
-          width={300}
-          height={450}
-          alt='Ishan Artwork'
-          className='rounded-box'
-        />
-      </div>
-      <div className='carousel-item'>
-        <Image
-          src={artwork8}
-          width={300}
-          height={450}
-          alt='Ishan Artwork'
-          className='rounded-box'
-        />
+      <div className='flex justify-center w-full py-2 gap-2'>
+        <a href='#item1' className='btn btn-xs'>
+          1
+        </a>
+        <a href='#item2' className='btn btn-xs'>
+          2
+        </a>
+        <a href='#item3' className='btn btn-xs'>
+          3
+        </a>
+        <a href='#item4' className='btn btn-xs'>
+          4
+        </a>
       </div>
     </motion.div>
   );
