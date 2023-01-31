@@ -19,7 +19,7 @@ const Hero = () => {
       >
         Ishan
       </Text>
-      <Image className='' src={artwork3} alt='Portrait of Ishan' />
+      <Image src={artwork3} alt='Portrait of Ishan' />
     </div>
   );
 };
