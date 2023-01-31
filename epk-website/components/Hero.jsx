@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import artwork3 from '../public/Artwork3.jpeg';
 import { Text } from '@nextui-org/react';
+import { useState } from 'react';
 
 const Hero = () => {
+  const [isGif, setIsGif] = useState(false);
   return (
     <div>
       <Text
@@ -17,7 +19,7 @@ const Hero = () => {
       >
         Ishan
       </Text>
-      <Image className='' src={artwork3} alt='Photograph of Ishan' />
+      <Image className='' src={artwork3} alt='Portrait of Ishan' />
     </div>
   );
 };
