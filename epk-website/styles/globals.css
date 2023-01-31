@@ -16,3 +16,7 @@
     overflow-x: hidden !important;
   }
 }
+
+.font {
+  font-family: 'Italiana', serif;
+}

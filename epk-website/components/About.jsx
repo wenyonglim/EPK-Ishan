@@ -5,12 +5,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <Box css={{ px: '$12', mt: '$8', '@xsMax': { px: '$10' } }}>
-      <Text
-        size='$lg'
-        css={{
-          font: '',
-        }}
-      >
+      <Text size='$xl' className='font'>
         Born and raised in London, England singer-songwriter Ishan immersed
         herself into her artistry from a young age. Equipped with a deep passion
         for performing and a desire to express herself through music and her
