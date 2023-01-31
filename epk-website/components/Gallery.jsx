@@ -8,6 +8,9 @@ import artwork5 from '../public/Artwork5.jpeg';
 import artwork6 from '../public/Artwork6.jpeg';
 import artwork7 from '../public/Artwork7.jpeg';
 import artwork8 from '../public/Artwork8.jpg';
+import artwork9 from '../public/Artwork9.jpeg';
+import artwork10 from '../public/Artwork10.jpeg';
+import { Text, Link } from '@nextui-org/react';
 
 const Gallery = () => {
   return (
@@ -19,7 +22,7 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork1}
               />
             </div>
           </div>
@@ -28,7 +31,7 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork2}
               />
             </div>
           </div>
@@ -37,7 +40,7 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork3}
               />
             </div>
           </div>
@@ -46,7 +49,7 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork4}
               />
             </div>
           </div>
@@ -55,7 +58,7 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork5}
               />
             </div>
           </div>
@@ -64,7 +67,7 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork6}
               />
             </div>
           </div>
@@ -73,7 +76,7 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork7}
               />
             </div>
           </div>
@@ -82,7 +85,7 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork8}
               />
             </div>
           </div>
@@ -91,7 +94,7 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork9}
               />
             </div>
           </div>
@@ -100,8 +103,26 @@ const Gallery = () => {
               <Image
                 alt='gallery'
                 className='block object-cover object-center w-full h-full rounded-lg'
-                src={HeroImage}
+                src={artwork10}
               />
+            </div>
+            <div className='w-full p-1 md:p-2'>
+              <Link
+                target='_blank'
+                href='https://drive.google.com/drive/folders/1EfyLZzjpIJMg-vnDGmYqp5ZNxkBCD4y8?usp=sharing'
+                isExternal
+              >
+                <Text
+                  h1
+                  size={60}
+                  css={{
+                    textGradient: '45deg, $yellow600 -20%, $red600 100%',
+                  }}
+                  weight='bold'
+                >
+                  Download
+                </Text>
+              </Link>
             </div>
           </div>
         </div>
