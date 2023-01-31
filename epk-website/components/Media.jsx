@@ -5,5 +5,5 @@ import media3 from '../public/Media3.jpg';
 import media4 from '../public/Media4.jpg';
 
 export default function Media() {
-  return <Cards />;
+  return <Cards img={media1} />;
 }

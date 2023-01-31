@@ -1,10 +1,9 @@
+import Image from 'next/image';
+
 export const Cards = ({ title, description, img }) => (
   <div className='card lg:card-side bg-base-100 shadow-xl'>
     <figure>
-      <img
-        src='/images/stock/photo-1494232410401-ad00d5433cfa.jpg'
-        alt='Album'
-      />
+      <Image src={img} alt='Album' width={428} height={241} />
     </figure>
     <div className='card-body'>
       <h2 className='card-title'>New album is released!</h2>
