@@ -2,6 +2,7 @@ import Image from 'next/image';
 import artwork3 from '../public/Artwork3.jpeg';
 import { Text } from '@nextui-org/react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   // ? needs gif image
