@@ -1,66 +1,77 @@
 import { Card, Col, Row, Button, Text } from '@nextui-org/react';
+import { motion } from 'framer-motion';
 
 export const Card1 = () => (
-  <Card css={{ w: '100%', h: '400px' }}>
-    <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
-      <Col>
-        <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
-          I think you gotta go
-        </Text>
-        <Text h3 color='white'>
-          Music Video
-        </Text>
-      </Col>
-    </Card.Header>
-    <Card.Body css={{ p: 0 }}>
-      <Card.Image
-        src='https://i.ytimg.com/vi_webp/Kzq6vIZ-5rE/maxresdefault.webp?v=633b46c0'
-        width='100%'
-        height='100%'
-        objectFit='cover'
-        alt='Card example background'
-      />
-    </Card.Body>
-    <Card.Footer
-      isBlurred
-      css={{
-        position: 'absolute',
-        bgBlur: '#ffffff66',
-        borderTop: '$borderWeights$light solid rgba(255, 255, 255, 0.2)',
-        bottom: 0,
-        zIndex: 1,
-      }}
-    >
-      <Row>
+  <motion.div
+    initial={{ scale: 0, rotate: 180 }}
+    whileInView={{ rotate: 0, scale: 1 }}
+    transition={{
+      type: 'spring',
+      stiffness: 260,
+      damping: 20,
+    }}
+  >
+    <Card css={{ w: '100%', h: '400px' }}>
+      <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
         <Col>
-          <Text color='#000' size={12}>
-            Available now.
+          <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
+            I think you gotta go
           </Text>
-          <Text color='#000' size={12}></Text>
+          <Text h3 color='white'>
+            Music Video
+          </Text>
         </Col>
-        <Col>
-          <Row justify='flex-end'>
-            <Button
-              flat
-              auto
-              rounded
-              color='secondary'
-              onPress={() => {
-                window.open('https://youtu.be/Kzq6vIZ-5rE');
-              }}
-            >
-              <Text
-                css={{ color: 'white' }}
-                size={12}
-                weight='bold'
-                transform='uppercase'
+      </Card.Header>
+      <Card.Body css={{ p: 0 }}>
+        <Card.Image
+          src='https://i.ytimg.com/vi_webp/Kzq6vIZ-5rE/maxresdefault.webp?v=633b46c0'
+          width='100%'
+          height='100%'
+          objectFit='cover'
+          alt='Card example background'
+        />
+      </Card.Body>
+      <Card.Footer
+        isBlurred
+        css={{
+          position: 'absolute',
+          bgBlur: '#ffffff66',
+          borderTop: '$borderWeights$light solid rgba(255, 255, 255, 0.2)',
+          bottom: 0,
+          zIndex: 1,
+        }}
+      >
+        <Row>
+          <Col>
+            <Text color='#000' size={12}>
+              Available now.
+            </Text>
+            <Text color='#000' size={12}></Text>
+          </Col>
+          <Col>
+            <Row justify='flex-end'>
+              <Button
+                flat
+                auto
+                rounded
+                color='secondary'
+                onPress={() => {
+                  window.open('https://youtu.be/Kzq6vIZ-5rE');
+                }}
               >
-                Watch
-              </Text>
-            </Button>
-          </Row>
-        </Col>
-      </Row>
-    </Card.Footer>
-  </Card>
+                <Text
+                  css={{ color: 'white' }}
+                  size={12}
+                  weight='bold'
+                  transform='uppercase'
+                >
+                  Watch
+                </Text>
+              </Button>
+            </Row>
+          </Col>
+        </Row>
+      </Card.Footer>
+    </Card>
+  </motion.div>
 );
