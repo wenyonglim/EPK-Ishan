@@ -1,7 +1,7 @@
 import { Card, Col, Text, Row, Button } from '@nextui-org/react';
 import Image from '@nextui-org/react';
 
-export const Card5 = () => (
+export const Card7 = () => (
   <Card css={{ w: '100%', h: '400px' }}>
     <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
       <Col>
@@ -16,7 +16,7 @@ export const Card5 = () => (
     </Card.Header>
     <Card.Body css={{ p: 0 }}>
       <Card.Image
-        src='https://i.ytimg.com/vi_webp/akVnfJXDpxE/maxresdefault.webp?v=628a153f'
+        src='https://i.ytimg.com/vi_webp/YNtoJZlnQc8/maxresdefault.webp?v=62ab09dc'
         width='100%'
         height='100%'
         objectFit='cover'
@@ -36,10 +36,10 @@ export const Card5 = () => (
       <Row>
         <Col>
           <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
-            ep.1 get 2 know u
+            ep.3. i don’t do it for you
           </Text>
           <Text h3 color='white'>
-            Uni vlogs + nightlife & studio moments
+            Paris vlog, graduation, reunion + more!
           </Text>
         </Col>
         <Col>
