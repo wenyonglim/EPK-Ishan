@@ -3,15 +3,7 @@ import Image from '@nextui-org/react';
 import { motion } from 'framer-motion';
 
 export const Card6 = () => (
-  <motion.div
-    initial={{ scale: 0 }}
-    whileInView={{ scale: 1 }}
-    transition={{
-      type: 'spring',
-      stiffness: 260,
-      damping: 20,
-    }}
-  >
+  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
     <Card css={{ w: '100%', h: '400px' }}>
       <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
         <Col>
