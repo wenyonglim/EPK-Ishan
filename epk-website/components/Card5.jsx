@@ -7,7 +7,7 @@ export const Card5 = () => (
         <Text size={12} weight='bold' transform='uppercase' color='#9E9E9E'>
           Do you wanna chill?
         </Text>
-        <Text h3 color='white'>
+        <Text h3 color='black'>
           Music Video
         </Text>
       </Col>
@@ -35,9 +35,7 @@ export const Card5 = () => (
         <Col>
           <Row>
             <Col>
-              <Text color='black' size={12}>
-                Do you wanna chill?
-              </Text>
+              <Text color='black' size={12}></Text>
               <Text color='black' size={12}></Text>
             </Col>
           </Row>
