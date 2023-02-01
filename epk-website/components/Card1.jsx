@@ -5,14 +5,7 @@ export const Card1 = () => (
   <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
     <Card css={{ w: '100%', h: '400px' }}>
       <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
-        <Col>
-          <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
-            I think you gotta go
-          </Text>
-          <Text h3 color='white'>
-            Music Video
-          </Text>
-        </Col>
+        <Col></Col>
       </Card.Header>
       <Card.Body css={{ p: 0 }}>
         <Card.Image
@@ -35,10 +28,17 @@ export const Card1 = () => (
       >
         <Row>
           <Col>
-            <Text color='#000' size={12}>
-              Available now.
+            <Text
+              size={12}
+              weight='bold'
+              transform='uppercase'
+              color='#ffffffAA'
+            >
+              I think you gotta go
             </Text>
-            <Text color='#000' size={12}></Text>
+            <Text h3 color='white'>
+              Music Video
+            </Text>
           </Col>
           <Col>
             <Row justify='flex-end'>
