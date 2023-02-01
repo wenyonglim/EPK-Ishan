@@ -11,10 +11,15 @@ import artwork8 from '../public/Artwork8.jpg';
 import artwork9 from '../public/Artwork9.jpeg';
 import artwork10 from '../public/Artwork10.jpg';
 import { Text, Link } from '@nextui-org/react';
+import { motion } from 'framer-motion';
 
 const Gallery = () => {
   return (
-    <section className='overflow-hidden text-gray-700 '>
+    <motion.section
+      className='overflow-hidden text-gray-700'
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+    >
       <div className='container px-5 py-2 mx-auto lg:pt-12 lg:px-32'>
         <div className='flex flex-wrap -m-1 md:-m-2'>
           <div className='flex flex-wrap w-1/3'>
@@ -127,7 +132,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
