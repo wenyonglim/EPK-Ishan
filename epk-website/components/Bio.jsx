@@ -3,7 +3,7 @@ import { Text, Spacer } from '@nextui-org/react';
 import { motion } from 'framer-motion';
 import Footer from '@/components/Footer';
 
-const About = () => {
+export const Bio = () => {
   return (
     <div>
       <Nav About={'underline'} />
@@ -74,4 +74,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Bio;
