@@ -4,16 +4,23 @@ export const Card2 = () => (
   <Card css={{ w: '100%' }}>
     <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
       <Col>
-        <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
-          Plant a tree
+        <Text
+          size={12}
+          weight='bold'
+          transform='uppercase'
+          css={{
+            textGradient: '45deg, $blue600 -20%, $pink600 50%',
+          }}
+        >
+          Music Video
         </Text>
         <Text h4 color='white'>
-          Contribute to the planet
+          Do you wanna chill?
         </Text>
       </Col>
     </Card.Header>
     <Card.Image
-      src='https://nextui.org/images/card-example-3.jpeg'
+      src='https://i1.ytimg.com/vi/D7n04b54g4E/hqdefault.jpg'
       width='100%'
       height={340}
       objectFit='cover'

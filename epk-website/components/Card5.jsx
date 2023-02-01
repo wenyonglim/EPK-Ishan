@@ -5,16 +5,16 @@ export const Card5 = () => (
     <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
       <Col>
         <Text size={12} weight='bold' transform='uppercase' color='#9E9E9E'>
-          Your day your way
+          Do you wanna chill?
         </Text>
         <Text h3 color='white'>
-          Your checklist for better sleep
+          Music Video
         </Text>
       </Col>
     </Card.Header>
     <Card.Body css={{ p: 0 }}>
       <Card.Image
-        src='https://nextui.org/images/card-example-5.jpeg'
+        src='https://i.postimg.cc/cdsNhST6/Do-you-wanna-chill-logo.png'
         objectFit='cover'
         width='100%'
         height='100%'
@@ -34,22 +34,11 @@ export const Card5 = () => (
       <Row>
         <Col>
           <Row>
-            <Col span={3}>
-              <Card.Image
-                src='https://nextui.org/images/breathing-app-icon.jpeg'
-                css={{ bg: 'black', br: '50%' }}
-                height={40}
-                width={40}
-                alt='Breathing app icon'
-              />
-            </Col>
             <Col>
-              <Text color='#d1d1d1' size={12}>
-                Breathing App
+              <Text color='black' size={12}>
+                Do you wanna chill?
               </Text>
-              <Text color='#d1d1d1' size={12}>
-                Get a good night's sleep.
-              </Text>
+              <Text color='black' size={12}></Text>
             </Col>
           </Row>
         </Col>
@@ -67,7 +56,7 @@ export const Card5 = () => (
                 weight='bold'
                 transform='uppercase'
               >
-                Get App
+                Watch
               </Text>
             </Button>
           </Row>

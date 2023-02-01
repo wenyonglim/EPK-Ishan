@@ -5,16 +5,16 @@ export const Card4 = () => (
     <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
       <Col>
         <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
-          New
+          I think you gotta go
         </Text>
         <Text h3 color='black'>
-          Acme camera
+          Music Video
         </Text>
       </Col>
     </Card.Header>
     <Card.Body css={{ p: 0 }}>
       <Card.Image
-        src='https://nextui.org/images/card-example-6.jpeg'
+        src='https://i.ytimg.com/vi_webp/Kzq6vIZ-5rE/maxresdefault.webp?v=633b46c0'
         width='100%'
         height='100%'
         objectFit='cover'
@@ -34,11 +34,9 @@ export const Card4 = () => (
       <Row>
         <Col>
           <Text color='#000' size={12}>
-            Available soon.
+            Available now.
           </Text>
-          <Text color='#000' size={12}>
-            Get notified.
-          </Text>
+          <Text color='#000' size={12}></Text>
         </Col>
         <Col>
           <Row justify='flex-end'>
@@ -49,7 +47,7 @@ export const Card4 = () => (
                 weight='bold'
                 transform='uppercase'
               >
-                Notify Me
+                Watch
               </Text>
             </Button>
           </Row>
