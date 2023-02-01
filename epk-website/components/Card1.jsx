@@ -7,7 +7,7 @@ export const Card1 = () => (
         <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
           I think you gotta go
         </Text>
-        <Text h3 color='black'>
+        <Text h3 color='white'>
           Music Video
         </Text>
       </Col>
@@ -42,7 +42,7 @@ export const Card1 = () => (
           <Row justify='flex-end'>
             <Button flat auto rounded color='secondary'>
               <Text
-                css={{ color: 'inherit' }}
+                css={{ color: 'white' }}
                 size={12}
                 weight='bold'
                 transform='uppercase'

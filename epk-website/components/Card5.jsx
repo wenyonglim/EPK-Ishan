@@ -1,29 +1,57 @@
-import { Card, Col, cssNoBlurriness, Text } from '@nextui-org/react';
+import { Card, Col, Text, Row, Button } from '@nextui-org/react';
+import Image from '@nextui-org/react';
 
 export const Card5 = () => (
-  <Card css={{ bg: '$black', w: '100%' }}>
+  <Card css={{ w: '100%', h: '400px' }}>
     <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
       <Col>
-        <Text
-          size={12}
-          weight=''
-          className='pl-64'
-          transform='uppercase'
-          css={{
-            textGradient: '45deg, $red200 -20%, $blue800 50%',
-          }}
-        >
-          Playground (Video)
+        <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
+          I think you gotta go
+        </Text>
+        <Text h3 color='white'>
+          Music Video
         </Text>
       </Col>
     </Card.Header>
-    <Card.Image
-      src='https://i.ytimg.com/vi_webp/fPOWbf8S6Iw/maxresdefault.webp?v=60157084'
-      width='100%'
-      className='lg:opacity-50 lg:hover:opacity-100'
-      height={340}
-      objectFit='cover'
-      alt='Card image background'
-    />
+    <Card.Body css={{ p: 0 }}>
+      <Card.Image
+        src='https://i.ytimg.com/vi_webp/Kzq6vIZ-5rE/maxresdefault.webp?v=633b46c0'
+        width='100%'
+        height='100%'
+        objectFit='cover'
+        alt='Card example background'
+      />
+    </Card.Body>
+    <Card.Footer
+      isBlurred
+      css={{
+        position: 'absolute',
+        bgBlur: '#ffffff66',
+        borderTop: '$borderWeights$light solid rgba(255, 255, 255, 0.2)',
+        bottom: 0,
+        zIndex: 1,
+      }}
+    >
+      <Row>
+        <Col>
+          <Text color='#000' size={12}></Text>
+          <Text color='#000' size={12}></Text>
+        </Col>
+        <Col>
+          <Row justify='flex-end'>
+            <Button flat auto rounded color='secondary'>
+              <Text
+                css={{ color: 'white' }}
+                size={12}
+                weight='bold'
+                transform='uppercase'
+              >
+                Watch
+              </Text>
+            </Button>
+          </Row>
+        </Col>
+      </Row>
+    </Card.Footer>
   </Card>
 );
