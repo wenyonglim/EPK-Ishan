@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 export const Card1 = () => (
   <motion.div
-    initial={{ scale: 0, rotate: 180 }}
-    whileInView={{ rotate: 0, scale: 1 }}
+    initial={{ scale: 0 }}
+    whileInView={{ scale: 1 }}
     transition={{
       type: 'spring',
       stiffness: 260,
