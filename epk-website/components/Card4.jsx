@@ -5,17 +5,18 @@ export const Card4 = () => (
   <Card css={{ w: '100%', h: '400px' }}>
     <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
       <Col>
-        <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
-          I think you gotta go
-        </Text>
-        <Text h3 color='white'>
-          Music Video
-        </Text>
+        <Text
+          size={12}
+          weight='bold'
+          transform='uppercase'
+          color='#ffffffAA'
+        ></Text>
+        <Text h3 color='white'></Text>
       </Col>
     </Card.Header>
     <Card.Body css={{ p: 0 }}>
       <Card.Image
-        src='https://i.ytimg.com/vi_webp/Kzq6vIZ-5rE/maxresdefault.webp?v=633b46c0'
+        src='https://i.ytimg.com/vi/JubDA4i65uA/maxresdefault.jpg'
         width='100%'
         height='100%'
         objectFit='cover'
@@ -34,8 +35,12 @@ export const Card4 = () => (
     >
       <Row>
         <Col>
-          <Text color='#000' size={12}></Text>
-          <Text color='#000' size={12}></Text>
+          <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
+            Weekend.
+          </Text>
+          <Text h3 color='white'>
+            Video
+          </Text>
         </Col>
         <Col>
           <Row justify='flex-end'>
