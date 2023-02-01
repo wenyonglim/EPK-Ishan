@@ -28,7 +28,7 @@ export default function Home() {
         <div className='hidden lg:block'>
           <Gallery />
         </div>
-        <div>
+        <div className='overflow-y-hidden overflow-x-hidden'>
           <Media />
         </div>
 
