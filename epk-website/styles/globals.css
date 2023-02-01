@@ -34,7 +34,6 @@ html {
   .fontMedium {
     font-family: 'Italiana', serif;
     font-size: 32px;
-    font-weight: 700;
-    color: pink;
+    scroll-padding-block: 90px;
   }
 }

@@ -1,18 +1,16 @@
 import Nav from '@/components/Nav';
 import { Text, Spacer } from '@nextui-org/react';
 import { motion } from 'framer-motion';
-import Footer from '@/components/Footer';
 
 export const Bio = () => {
   return (
     <div>
-      <Nav About={'underline'} />
       <div className='flex justify-center pt-24'>
         <Text
           h1
           size={60}
           css={{
-            textGradient: '45deg, $blue600 -20%, $pink600 50%',
+            textGradient: '45deg, $pink600 -20%, $purple700 50%',
           }}
           weight='bold'
           id='About'
@@ -66,9 +64,6 @@ export const Bio = () => {
             in 2023!
           </Text>
         </motion.div>
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

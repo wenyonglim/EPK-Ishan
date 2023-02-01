@@ -4,6 +4,8 @@ import styles from '@/styles/Home.module.css';
 import NavHome from '@/components/NavHome';
 import { motion } from 'framer-motion';
 import { Link } from '@nextui-org/react';
+import Bio from '@/components/Bio';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -18,7 +20,12 @@ export default function Home() {
         <div className=''>
           <NavHome Home={'underline'} About={''} Press={''} Media={''} />
         </div>
-        <div className=''></div>
+        <div className='hidden lg:block'>
+          <Bio />
+        </div>
+        <div className=''>
+          <Footer />
+        </div>
       </main>
     </>
   );

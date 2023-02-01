@@ -68,6 +68,5 @@ export const ContentHome = () => (
       </Text>
       <Media />
     </div>
-    <Footer />
   </div>
 );
