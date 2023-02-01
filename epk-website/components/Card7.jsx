@@ -43,7 +43,7 @@ export const Card7 = () => (
               transform='uppercase'
               color='#ffffffAA'
             >
-              ep.3. i don’t do it for you
+              ep.3 I don’t do it for you
             </Text>
             <Text h3 color='white'>
               Paris vlog, graduation, reunion + more!

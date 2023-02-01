@@ -43,7 +43,7 @@ export const Card6 = () => (
               transform='uppercase'
               color='#ffffffAA'
             >
-              ep.2. company
+              ep.2 company
             </Text>
             <Text h3 color='white'>
               Uni vlogs, studio sessions & nightlife
