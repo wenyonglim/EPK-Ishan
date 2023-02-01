@@ -8,19 +8,19 @@ import { Card5 } from './Card5';
 export default function Cards() {
   return (
     <Grid.Container gap={2} justify='center'>
-      <Grid xs={12} sm={4}>
+      <Grid xs={12} sm={5}>
         <Card1 />
       </Grid>
-      <Grid xs={12} sm={4}>
+      <Grid xs={12} sm={7}>
         <Card2 />
       </Grid>
       <Grid xs={12} sm={4}>
         <Card3 />
       </Grid>
-      <Grid xs={12} sm={5}>
+      <Grid xs={12} sm={4}>
         <Card4 />
       </Grid>
-      <Grid xs={12} sm={7}>
+      <Grid xs={12} sm={4}>
         <Card5 />
       </Grid>
     </Grid.Container>
