@@ -1,28 +1,24 @@
-import { Card, Col, cssNoBlurriness, Text } from '@nextui-org/react';
+import { Card, Col, Text } from '@nextui-org/react';
+import Image from '@nextui-org/react';
+import media1 from '../public/Artwork1.jpeg';
 
 export const Card3 = () => (
-  <Card css={{ bg: '$black', w: '100%' }}>
+  <Card>
     <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
       <Col>
-        <Text
-          size={12}
-          weight=''
-          className='pl-64'
-          transform='uppercase'
-          css={{
-            textGradient: '45deg, $red200 -20%, $blue800 50%',
-          }}
-        >
-          Playground (Video)
+        <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
+          What to watch
+        </Text>
+        <Text h4 color='white'>
+          I think you gotta go (music video)
         </Text>
       </Col>
     </Card.Header>
     <Card.Image
-      src='https://i.ytimg.com/vi_webp/fPOWbf8S6Iw/maxresdefault.webp?v=60157084'
-      width='100%'
-      className='lg:opacity-50 lg:hover:opacity-100'
-      height={340}
+      src='https://i.ytimg.com/vi_webp/Kzq6vIZ-5rE/maxresdefault.webp?v=633b46c0'
       objectFit='cover'
+      width='100%'
+      height={340}
       alt='Card image background'
     />
   </Card>

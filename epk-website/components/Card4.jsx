@@ -1,58 +1,30 @@
-import { Card, Col, Row, Button, Text } from '@nextui-org/react';
+import { Card, Col, Text } from '@nextui-org/react';
 
 export const Card4 = () => (
-  <Card css={{ w: '100%', h: '400px' }}>
+  <Card css={{ w: '100%' }}>
     <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
       <Col>
-        <Text size={12} weight='bold' transform='uppercase' color='#ffffffAA'>
-          I think you gotta go
-        </Text>
-        <Text h3 color='black'>
+        <Text
+          size={12}
+          weight='bold'
+          transform='uppercase'
+          css={{
+            textGradient: '45deg, $blue600 -20%, $pink600 50%',
+          }}
+        >
           Music Video
+        </Text>
+        <Text h4 color='white'>
+          Do you wanna chill?
         </Text>
       </Col>
     </Card.Header>
-    <Card.Body css={{ p: 0 }}>
-      <Card.Image
-        src='https://i.ytimg.com/vi_webp/Kzq6vIZ-5rE/maxresdefault.webp?v=633b46c0'
-        width='100%'
-        height='100%'
-        objectFit='cover'
-        alt='Card example background'
-      />
-    </Card.Body>
-    <Card.Footer
-      isBlurred
-      css={{
-        position: 'absolute',
-        bgBlur: '#ffffff66',
-        borderTop: '$borderWeights$light solid rgba(255, 255, 255, 0.2)',
-        bottom: 0,
-        zIndex: 1,
-      }}
-    >
-      <Row>
-        <Col>
-          <Text color='#000' size={12}>
-            Available now.
-          </Text>
-          <Text color='#000' size={12}></Text>
-        </Col>
-        <Col>
-          <Row justify='flex-end'>
-            <Button flat auto rounded color='secondary'>
-              <Text
-                css={{ color: 'inherit' }}
-                size={12}
-                weight='bold'
-                transform='uppercase'
-              >
-                Watch
-              </Text>
-            </Button>
-          </Row>
-        </Col>
-      </Row>
-    </Card.Footer>
+    <Card.Image
+      src='https://i1.ytimg.com/vi/D7n04b54g4E/hqdefault.jpg'
+      width='100%'
+      height={340}
+      objectFit='cover'
+      alt='Card image background'
+    />
   </Card>
 );
