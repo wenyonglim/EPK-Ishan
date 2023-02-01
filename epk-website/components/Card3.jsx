@@ -44,7 +44,15 @@ export const Card3 = () => (
         </Col>
         <Col>
           <Row justify='flex-end'>
-            <Button flat auto rounded color='secondary'>
+            <Button
+              flat
+              auto
+              rounded
+              color='secondary'
+              onPress={() => {
+                window.open('https://youtu.be/fPOWbf8S6Iw');
+              }}
+            >
               <Text
                 css={{ color: 'white' }}
                 size={12}
