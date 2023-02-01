@@ -4,7 +4,6 @@ import { Box } from './Box.jsx';
 import Hero from './Hero.jsx';
 import Carousel from '@/components/Carousel';
 import Music from './Music.jsx';
-import Media from './Media.jsx';
 import Footer from './Footer.jsx';
 import HeroLarge from './HeroLarge.jsx';
 import CarouselLarge from './CarouselLarge.jsx';
@@ -66,7 +65,6 @@ export const ContentHome = () => (
       >
         Media
       </Text>
-      <Media />
     </div>
   </div>
 );

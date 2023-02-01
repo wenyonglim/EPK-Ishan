@@ -1,19 +1,28 @@
-import Image from 'next/image';
-import { FaYoutube } from 'react-icons/fa';
+import { Grid } from '@nextui-org/react';
+import { Card1 } from './Card1';
+import { Card2 } from './Card2';
+import { Card3 } from './Card3';
+import { Card4 } from './Card4';
+import { Card5 } from './Card5';
 
-export const Cards = ({ title, description, img, btn, link }) => (
-  <div className='card lg:card-side bg-base-100 shadow-xl'>
-    <figure>
-      <Image src={img} alt='Video' width={428} height={241} />
-    </figure>
-    <div className='card-body'>
-      <h2 className='card-title'>{title}</h2>
-      <p>{description}</p>
-      <div className='card-actions justify-end'>
-        <button className='btn btn-secondary' onClick={() => window.open(link)}>
-          {btn}
-        </button>
-      </div>
-    </div>
-  </div>
-);
+export default function Cards() {
+  return (
+    <Grid.Container gap={2} justify='center'>
+      <Grid xs={12} sm={4}>
+        <Card1 />
+      </Grid>
+      <Grid xs={12} sm={4}>
+        <Card2 />
+      </Grid>
+      <Grid xs={12} sm={4}>
+        <Card3 />
+      </Grid>
+      <Grid xs={12} sm={5}>
+        <Card4 />
+      </Grid>
+      <Grid xs={12} sm={7}>
+        <Card5 />
+      </Grid>
+    </Grid.Container>
+  );
+}

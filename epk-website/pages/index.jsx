@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 import { Link } from '@nextui-org/react';
 import Bio from '@/components/Bio';
 import Footer from '@/components/Footer';
+import Gallery from '@/components/Gallery';
+import Media from '@/components/Media';
 
 export default function Home() {
   return (
@@ -23,6 +25,13 @@ export default function Home() {
         <div className='hidden lg:block'>
           <Bio />
         </div>
+        <div className='hidden lg:block'>
+          <Gallery />
+        </div>
+        <div>
+          <Media />
+        </div>
+
         <div className=''>
           <Footer />
         </div>

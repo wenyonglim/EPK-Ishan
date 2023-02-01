@@ -19,6 +19,7 @@ module.exports = {
           'base-100': '#1d1d1d',
         },
       },
+      'dracula',
     ],
   },
 };

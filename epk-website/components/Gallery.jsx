@@ -9,7 +9,7 @@ import artwork6 from '../public/Artwork6.jpeg';
 import artwork7 from '../public/Artwork7.jpeg';
 import artwork8 from '../public/Artwork8.jpg';
 import artwork9 from '../public/Artwork9.jpeg';
-import artwork10 from '../public/Artwork10.jpeg';
+import artwork10 from '../public/Artwork10.jpg';
 import { Text, Link } from '@nextui-org/react';
 
 const Gallery = () => {
@@ -114,13 +114,13 @@ const Gallery = () => {
               >
                 <Text
                   h1
-                  size={60}
+                  size={30}
                   css={{
                     textGradient: '45deg, $yellow600 -20%, $red600 100%',
                   }}
                   weight='bold'
                 >
-                  Download
+                  Download Photos
                 </Text>
               </Link>
             </div>
