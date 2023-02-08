@@ -1,7 +1,7 @@
 import { Card, Col, Row, Button, Text } from '@nextui-org/react';
 import { motion } from 'framer-motion';
 
-export const CardComponent = ({ src, title, description }) => (
+export const CardComponent = ({ src, title, description, link }) => (
   <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
     <Card css={{ w: '100%', h: '400px' }}>
       <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
@@ -20,7 +20,7 @@ export const CardComponent = ({ src, title, description }) => (
         isBlurred
         css={{
           position: 'absolute',
-          bgBlur: '#ffffff66',
+          bgBlur: '#ffffffAA',
           borderTop: '$borderWeights$light solid rgba(255, 255, 255, 0.2)',
           bottom: 0,
           zIndex: 1,
@@ -48,7 +48,7 @@ export const CardComponent = ({ src, title, description }) => (
                 rounded
                 color='secondary'
                 onPress={() => {
-                  window.open('https://youtu.be/Kzq6vIZ-5rE');
+                  window.open(link);
                 }}
               >
                 <Text
