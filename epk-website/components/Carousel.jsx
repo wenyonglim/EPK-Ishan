@@ -23,7 +23,7 @@ const Carousel = () => {
         <Image
           src={artwork1}
           width={300}
-          height={450}
+          height={450} 
           alt='Ishan Artwork'
           className='rounded-box'
         />
