@@ -10,10 +10,10 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.2, duration: 0.4 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
         className='lg:pt-20'
       >
-        <Text size='$xl' className='fontLarge fontSmall'>
+        <Text size='$xl' className='lg:text-4xl fontSmall text-2xl'>
           Born and raised in London, England, Ishan is a gifted
           singer-songwriter who honed her skills from a young age. Starting at
           Stagecoach, a performing arts network, Ishan always had a natural
@@ -27,9 +27,9 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2, duration: 0.4 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <Text size='$lg' className='fontMedium'>
+          <Text size='$lg' className='fontMedium fontSmall text-xl'>
             With a range of musical influences including Lady Gaga, Beyoncé,
             Ariana Grande, and Whitney Houston, Ishan blends elements of R&B,
             Pop, and Soul to create a sound that is uniquely her own. In 2019,
@@ -42,9 +42,9 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2, duration: 0.4 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <Text size='$lg' className='fontMedium'>
+          <Text size='$lg' className='fontMedium fontSmall text-xl'>
             Ishan is an artist on the rise, with a promising future ahead. Her
             blend of musical influences and her individual spin on R&B, Pop, and
             Soul music is sure to captivate audiences and establish her as a
