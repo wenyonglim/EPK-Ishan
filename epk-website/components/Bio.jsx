@@ -26,7 +26,7 @@ export const Bio = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 0.4 }}
         >
-          <Text size='$lg' className='fontMedium'>
+          <Text size='$lg' className='fontMedium p-24'>
             With a range of musical influences including Lady Gaga, Beyoncé,
             Ariana Grande, and Whitney Houston, Ishan blends elements of R&B,
             Pop, and Soul to create a sound that is uniquely her own. In 2019,
@@ -42,7 +42,7 @@ export const Bio = () => {
           transition={{ delay: 0.2, duration: 0.4 }}
         >
           <div id='Music'></div>
-          <Text size='$lg' className='fontMedium'>
+          <Text size='$lg' className='fontMedium px-24'>
             Ishan is an artist on the rise, with a promising future ahead. Her
             blend of musical influences and her individual spin on R&B, Pop, and
             Soul music is sure to captivate audiences and establish her as a

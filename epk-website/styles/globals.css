@@ -37,3 +37,9 @@ html {
     scroll-padding-block: 90px;
   }
 }
+
+.fontSmall {
+  font-family: 'Italiana', serif;
+  font-size: 24px;
+  padding: 24;
+}

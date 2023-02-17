@@ -13,7 +13,7 @@ const About = () => {
         transition={{ delay: 0.2, duration: 0.4 }}
         className='lg:pt-20'
       >
-        <Text size='$xl' className='fontLarge'>
+        <Text size='$xl' className='fontLarge fontSmall'>
           Born and raised in London, England, Ishan is a gifted
           singer-songwriter who honed her skills from a young age. Starting at
           Stagecoach, a performing arts network, Ishan always had a natural
