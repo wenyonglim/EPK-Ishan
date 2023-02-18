@@ -18,6 +18,7 @@ export default function Cards() {
           title=' Do you wanna chill?'
           description='Music Video'
           link='https://youtu.be/D7n04b54g4E'
+          dark={true}
         />
       </Grid>
       <Grid xs={12} sm={4}>

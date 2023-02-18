@@ -28,15 +28,10 @@ export const CardComponent = ({ src, title, description, link }) => (
       >
         <Row>
           <Col>
-            <Text
-              size={12}
-              weight='bold'
-              transform='uppercase'
-              color='#ffffffAA'
-            >
+            <Text size={12} weight='bold' transform='uppercase' color='black'>
               {title}
             </Text>
-            <Text h3 color='white'>
+            <Text h3 color='#E96479'>
               {description}
             </Text>
           </Col>
@@ -52,7 +47,7 @@ export const CardComponent = ({ src, title, description, link }) => (
                 }}
               >
                 <Text
-                  css={{ color: 'white' }}
+                  css={{ color: '#4D455D' }}
                   size={12}
                   weight='bold'
                   transform='uppercase'
