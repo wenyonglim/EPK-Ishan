@@ -1,6 +1,6 @@
 # Electronic Press Kits (EPKs) for artists, effectively showcasing their work and achievements to target audiences in the real world
 
-[EPK Website](https://epk-ishan.vercel.app/)
+[Live view](https://epk-ishan.vercel.app/)
 
 Project was built using Next.js (v13.1.2), a powerful React-based framework that provides server-rendering, static site generation, and efficient build-time optimizations. The website's UI components and design system were developed using a combination of Headless UI (v1.7.7), Next UI (v1.0.0-beta.12), and DaisyUI (v2.49.0), which offer highly customizable, accessible, and responsive components for building intuitive and visually appealing user interfaces.
 
