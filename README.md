@@ -14,3 +14,10 @@ The project also employed Sharp (v0.31.3) to process images efficiently, optimiz
 
 To maintain code quality and adherence to best practices, the project made use of ESLint (v8.32.0) and the ESLint configuration for Next.js (v13.1.2). This helped in identifying potential issues and keeping the codebase clean and consistent.
 
+
+
+Things I could Add in the future: 
+- Instagram grid
+- Blog by Ishan
+- Contact page
+- Links to other social medias
