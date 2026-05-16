@@ -1,5 +1,5 @@
 import { Button } from '@nextui-org/react';
-import { FaMoon, FaRegClock, FaSun } from 'react-icons/fa';
+import { FaMoon, FaSun } from 'react-icons/fa';
 import { useThemeMode } from './ThemeContext.jsx';
 
 const themeLabels = {
@@ -10,15 +10,16 @@ const themeLabels = {
 
 const ThemeToggle = () => {
   const { mode, resolvedTheme, cycleMode } = useThemeMode();
-  const Icon = mode === 'auto' ? FaRegClock : resolvedTheme === 'light' ? FaSun : FaMoon;
+  const Icon = resolvedTheme === 'light' ? FaSun : FaMoon;
+  const nextTheme = resolvedTheme === 'light' ? 'Dark theme' : 'Light theme';
 
   return (
     <Button
       auto
       light
       rounded
-      aria-label={`Theme mode: ${themeLabels[mode]}`}
-      title={`${themeLabels[mode]} (${resolvedTheme})`}
+      aria-label={`Switch to ${nextTheme}`}
+      title={`${themeLabels[mode]} (${resolvedTheme}). Click for ${nextTheme}`}
       onPress={cycleMode}
       className='theme-toggle'
     >

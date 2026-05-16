@@ -47,12 +47,10 @@ export default function App({ Component, pageProps }) {
       mode,
       resolvedTheme,
       cycleMode: () => {
-        setMode((currentMode) => {
-          const nextMode =
-            THEME_MODES[(THEME_MODES.indexOf(currentMode) + 1) % THEME_MODES.length];
-          window.localStorage.setItem(STORAGE_KEY, nextMode);
-          return nextMode;
-        });
+        const nextMode = resolvedTheme === 'light' ? 'dark' : 'light';
+
+        window.localStorage.setItem(STORAGE_KEY, nextMode);
+        setMode(nextMode);
       },
     }),
     [mode, resolvedTheme]
