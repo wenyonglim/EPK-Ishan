@@ -49,7 +49,57 @@ html[data-theme-mode='light'] .text-neutral-content {
   color: inherit;
 }
 
+.epk-nav-brand {
+  min-width: 0;
+}
+
+.epk-nav-title {
+  white-space: nowrap;
+}
+
+.epk-nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  gap: 1rem;
+}
+
+.epk-nav-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+}
+
 @media screen and (max-width: 767px) {
+  .epk-nav-brand {
+    flex: 1 1 auto;
+    max-width: calc(100vw - 10rem);
+  }
+
+  .epk-nav-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.85rem;
+  }
+
+  .epk-nav-icons {
+    gap: 0.55rem !important;
+    margin-left: 0.9rem !important;
+  }
+
+  .epk-nav-icon-link {
+    min-width: 1.35rem;
+  }
+
+  .theme-toggle {
+    min-width: 28px !important;
+    width: 28px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   .fontSmall {
     display: block;
     width: 72vw !important;

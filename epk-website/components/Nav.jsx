@@ -14,9 +14,9 @@ const nav = ({ Home, About, Press, Media }) => {
 
   return (
     <Navbar isBordered variant='floating'>
-      <Navbar.Brand>
+      <Navbar.Brand className='epk-nav-brand'>
         <Navbar.Toggle aria-label='toggle navigation' className='md:hidden' />
-        <Text b color='inherit' className='pl-2'>
+        <Text b color='inherit' className='epk-nav-title pl-2'>
           Electronic Press Kit
         </Text>
       </Navbar.Brand>
@@ -44,36 +44,30 @@ const nav = ({ Home, About, Press, Media }) => {
       </Navbar.Content> */}
 
       {/* Links for Mobile */}
-      <Navbar.Content>
-        <Navbar.Item>
-          <Link
-            target='_blank'
-            href='https://music.apple.com/gb/artist/ishan/1450501527'
-          >
-            <FaApple />
-          </Link>
-        </Navbar.Item>
-        <Navbar.Item>
-          <Link
-            target='_blank'
-            href='https://open.spotify.com/artist/31H6pWphv3pWESSd03Ifyc?si=ET8qeQCrS3KUhPfSsg9x9A'
-          >
-            <FaSpotify />
-          </Link>
-        </Navbar.Item>
-        <Navbar.Item>
-          <Link
-            target='_blank'
-            className='pr-2'
-            href='https://youtube.com/@sassyprincesss'
-          >
-            <FaYoutube />
-          </Link>
-        </Navbar.Item>
-        <Navbar.Item>
-          <ThemeToggle />
-        </Navbar.Item>
-      </Navbar.Content>
+      <div className='epk-nav-icons'>
+        <Link
+          className='epk-nav-icon-link'
+          target='_blank'
+          href='https://music.apple.com/gb/artist/ishan/1450501527'
+        >
+          <FaApple />
+        </Link>
+        <Link
+          className='epk-nav-icon-link'
+          target='_blank'
+          href='https://open.spotify.com/artist/31H6pWphv3pWESSd03Ifyc?si=ET8qeQCrS3KUhPfSsg9x9A'
+        >
+          <FaSpotify />
+        </Link>
+        <Link
+          className='epk-nav-icon-link'
+          target='_blank'
+          href='https://youtube.com/@sassyprincesss'
+        >
+          <FaYoutube />
+        </Link>
+        <ThemeToggle />
+      </div>
     </Navbar>
   );
 };
