@@ -8,6 +8,7 @@ const Music = () => {
       id="Music"
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 1 }}
     >
       <Spotify

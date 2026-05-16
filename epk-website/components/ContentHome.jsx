@@ -14,22 +14,22 @@ export const ContentHome = () => (
       <About />
     </div>
     <Music />
-    <div id='Press Photos'></div>
-    <div className='flex justify-center pt-8 lg:hidden'>
-      <Text
-        h1
-        size={60}
-        css={{
-          textGradient: '45deg, $blue600 -20%, $pink600 50%',
-        }}
-        weight='bold'
-        id='About'
-        className='absolute z-50'
-      >
-        Press Photos
-      </Text>
+    <section id='Press Photos' className='pt-10 px-4 lg:hidden overflow-hidden'>
+      <div className='flex justify-center pb-4'>
+        <Text
+          h1
+          size={44}
+          css={{
+            textGradient: '45deg, $blue600 -20%, $pink600 50%',
+          }}
+          weight='bold'
+          className='text-center leading-none'
+        >
+          Press Photos
+        </Text>
+      </div>
       <Carousel />
-    </div>
+    </section>
     <div className='flex justify-center lg:hidden'>
       <Link
         target='_blank'
@@ -40,11 +40,10 @@ export const ContentHome = () => (
           shadow
           color='secondary'
           auto
-          className='z-50'
+          className='z-50 press-photos-button'
           css={{
             borderRadius: '$xs', // radii.xs
             border: '$space$1 solid transparent',
-            color: '$pink800',
             height: '$12', // space[12]
           }}
         >

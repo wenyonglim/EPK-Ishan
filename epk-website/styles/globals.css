@@ -25,6 +25,119 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body,
+#__next {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+html[data-theme-mode='light'] .bg-neutral {
+  background-color: #f0e7dd;
+}
+
+html[data-theme-mode='light'] .text-neutral-content {
+  color: #201a1f;
+}
+
+.theme-toggle {
+  min-width: 36px;
+  color: inherit;
+}
+
+.epk-nav-brand {
+  min-width: 0;
+}
+
+.epk-nav-title {
+  white-space: nowrap;
+}
+
+.epk-nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  gap: 1rem;
+}
+
+.epk-nav-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+}
+
+.press-photos-button {
+  background: linear-gradient(90deg, #7f3fc5 0%, #9c2fd3 100%) !important;
+  color: #fff !important;
+  font-weight: 700;
+  box-shadow: 0 14px 28px rgba(127, 63, 197, 0.24) !important;
+}
+
+.press-photos-button .nextui-button-text {
+  color: inherit;
+}
+
+html[data-theme-mode='light'] .press-photos-button {
+  background: #7f3fc5 !important;
+  box-shadow: 0 12px 24px rgba(127, 63, 197, 0.2) !important;
+}
+
+@media screen and (max-width: 767px) {
+  .epk-nav-brand {
+    flex: 1 1 auto;
+    max-width: calc(100vw - 10rem);
+  }
+
+  .epk-nav-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.85rem;
+  }
+
+  .epk-nav-icons {
+    gap: 0.55rem !important;
+    margin-left: 0.9rem !important;
+  }
+
+  .epk-nav-icon-link {
+    min-width: 1.35rem;
+  }
+
+  .theme-toggle {
+    min-width: 28px !important;
+    width: 28px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .fontSmall {
+    display: block;
+    width: 72vw !important;
+    max-width: 72vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-size: 1.55rem !important;
+    line-height: 1.16;
+  }
+
+  .mobile-carousel {
+    scrollbar-width: none;
+  }
+
+  .mobile-carousel::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .fontLarge {
     font-family: 'Italiana', serif;

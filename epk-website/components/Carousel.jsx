@@ -14,72 +14,73 @@ import { motion } from 'framer-motion';
 const Carousel = () => {
   return (
     <motion.div
-      className='carousel carousel-center max-w-md p-4 space-x-4 rounded-box'
-      initial={{ y: -100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 100 }}
-      transition={{ duration: 1.5 }}
+      className='mobile-carousel mx-auto flex w-full max-w-sm snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4'
+      initial={{ y: 32, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.6 }}
     >
-      <div className='carousel-item'>
+      <div className='carousel-item flex-none snap-center'>
         <Image
           src={artwork1}
           width={300}
           height={450} 
           alt='Ishan Artwork'
-          className='rounded-box'
+          className='w-[78vw] max-w-[300px] rounded-box'
         />
       </div>
-      <div className='carousel-item'>
+      <div className='carousel-item flex-none snap-center'>
         <Image
           src={artwork2}
           width={300}
           height={450}
           alt='Ishan Artwork'
-          className='rounded-box'
+          className='w-[78vw] max-w-[300px] rounded-box'
         />
       </div>
-      <div className='carousel-item'>
+      <div className='carousel-item flex-none snap-center'>
         <Image
           src={artwork3}
           width={300}
           height={450}
           alt='Ishan Artwork'
-          className='rounded-box'
+          className='w-[78vw] max-w-[300px] rounded-box'
         />
       </div>
-      <div className='carousel-item'>
+      <div className='carousel-item flex-none snap-center'>
         <Image
           src={artwork5}
           width={300}
           height={450}
           alt='Ishan Artwork'
-          className='rounded-box'
+          className='w-[78vw] max-w-[300px] rounded-box'
         />
       </div>
-      <div className='carousel-item'>
+      <div className='carousel-item flex-none snap-center'>
         <Image
           src={artwork6}
           width={300}
           height={450}
           alt='Ishan Artwork'
-          className='rounded-box'
+          className='w-[78vw] max-w-[300px] rounded-box'
         />
       </div>
-      <div className='carousel-item'>
+      <div className='carousel-item flex-none snap-center'>
         <Image
           src={artwork7}
           width={300}
           height={450}
           alt='Ishan Artwork'
-          className='rounded-box'
+          className='w-[78vw] max-w-[300px] rounded-box'
         />
       </div>
-      <div className='carousel-item'>
+      <div className='carousel-item flex-none snap-center'>
         <Image
           src={artwork8}
           width={300}
           height={450}
           alt='Ishan Artwork'
-          className='rounded-box'
+          className='w-[78vw] max-w-[300px] rounded-box'
         />
       </div>
     </motion.div>
