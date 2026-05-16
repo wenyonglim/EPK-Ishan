@@ -10,7 +10,8 @@ const CarouselLarge = () => {
     <motion.div
       className='carousel carousel-center max-w-md p-4 space-x-4 rounded-box'
       initial={{ y: -100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 100 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 1.5 }}
     >
       <div className='carousel w-full'>

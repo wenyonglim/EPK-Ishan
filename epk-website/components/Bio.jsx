@@ -23,6 +23,7 @@ export const Bio = () => {
         <motion.div
           initial={{ x: -20 }}
           whileInView={{ x: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ delay: 0.2, duration: 0.4 }}
         >
           <Text size='$lg' className='fontMedium p-24'>
@@ -38,6 +39,7 @@ export const Bio = () => {
         <motion.div
           initial={{ x: -20 }}
           whileInView={{ x: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ delay: 0.2, duration: 0.4 }}
         >
           <div id='Music'></div>

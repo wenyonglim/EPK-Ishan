@@ -6,11 +6,17 @@ const HeroImage = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 100 }}
-      transition={{ duration: 1.61803398875 }}
-      className='lg:hidden md:hidden'
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.35 }}
+      transition={{ duration: 0.8 }}
+      className='w-full overflow-hidden lg:hidden md:hidden'
     >
-      <Image src={artwork3} alt='Portrait of Ishan' width={600} />
+      <Image
+        src={artwork3}
+        alt='Portrait of Ishan'
+        width={600}
+        className='h-auto w-full'
+      />
     </motion.div>
   );
 };

@@ -14,22 +14,22 @@ export const ContentHome = () => (
       <About />
     </div>
     <Music />
-    <div id='Press Photos'></div>
-    <div className='flex justify-center pt-8 lg:hidden'>
+    <section id='Press Photos' className='pt-10 px-4 lg:hidden overflow-hidden'>
+      <div className='flex justify-center pb-4'>
       <Text
         h1
-        size={60}
+        size={44}
         css={{
           textGradient: '45deg, $blue600 -20%, $pink600 50%',
         }}
         weight='bold'
-        id='About'
-        className='absolute z-50'
+        className='text-center leading-none'
       >
         Press Photos
       </Text>
+      </div>
       <Carousel />
-    </div>
+    </section>
     <div className='flex justify-center lg:hidden'>
       <Link
         target='_blank'

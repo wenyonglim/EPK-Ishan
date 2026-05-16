@@ -2,7 +2,11 @@ import { Card, Col, Row, Button, Text } from '@nextui-org/react';
 import { motion } from 'framer-motion';
 
 export const CardComponent = ({ src, title, description, link }) => (
-  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+  <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true, amount: 0.2 }}
+  >
     <Card css={{ w: '100%', h: '400px' }}>
       <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
         <Col></Col>
