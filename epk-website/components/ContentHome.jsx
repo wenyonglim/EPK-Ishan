@@ -16,17 +16,17 @@ export const ContentHome = () => (
     <Music />
     <section id='Press Photos' className='pt-10 px-4 lg:hidden overflow-hidden'>
       <div className='flex justify-center pb-4'>
-      <Text
-        h1
-        size={44}
-        css={{
-          textGradient: '45deg, $blue600 -20%, $pink600 50%',
-        }}
-        weight='bold'
-        className='text-center leading-none'
-      >
-        Press Photos
-      </Text>
+        <Text
+          h1
+          size={44}
+          css={{
+            textGradient: '45deg, $blue600 -20%, $pink600 50%',
+          }}
+          weight='bold'
+          className='text-center leading-none'
+        >
+          Press Photos
+        </Text>
       </div>
       <Carousel />
     </section>
@@ -40,11 +40,10 @@ export const ContentHome = () => (
           shadow
           color='secondary'
           auto
-          className='z-50'
+          className='z-50 press-photos-button'
           css={{
             borderRadius: '$xs', // radii.xs
             border: '$space$1 solid transparent',
-            color: '$pink800',
             height: '$12', // space[12]
           }}
         >

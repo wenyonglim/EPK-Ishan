@@ -72,6 +72,22 @@ html[data-theme-mode='light'] .text-neutral-content {
   min-width: 1.75rem;
 }
 
+.press-photos-button {
+  background: linear-gradient(90deg, #7f3fc5 0%, #9c2fd3 100%) !important;
+  color: #fff !important;
+  font-weight: 700;
+  box-shadow: 0 14px 28px rgba(127, 63, 197, 0.24) !important;
+}
+
+.press-photos-button .nextui-button-text {
+  color: inherit;
+}
+
+html[data-theme-mode='light'] .press-photos-button {
+  background: #7f3fc5 !important;
+  box-shadow: 0 12px 24px rgba(127, 63, 197, 0.2) !important;
+}
+
 @media screen and (max-width: 767px) {
   .epk-nav-brand {
     flex: 1 1 auto;
