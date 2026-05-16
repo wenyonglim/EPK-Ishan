@@ -6,7 +6,7 @@ const Spotify = ({ playlist }) => {
         src={playlist}
         width='100%'
         height='447'
-        allowfullscreen=''
+        allowFullScreen
         allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
         loading='lazy'
       ></iframe>

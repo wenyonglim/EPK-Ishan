@@ -25,6 +25,23 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+html[data-theme-mode='light'] .bg-neutral {
+  background-color: #f0e7dd;
+}
+
+html[data-theme-mode='light'] .text-neutral-content {
+  color: #201a1f;
+}
+
+.theme-toggle {
+  min-width: 36px;
+  color: inherit;
+}
+
 @media only screen and (min-width: 768px) {
   .fontLarge {
     font-family: 'Italiana', serif;

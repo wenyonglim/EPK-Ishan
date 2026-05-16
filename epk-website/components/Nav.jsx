@@ -1,11 +1,6 @@
-import { Navbar, Button, Link, Text } from '@nextui-org/react';
-import { Layout } from './Layout.jsx';
-import { AcmeLogo } from './AcmeLogo.jsx';
-import { useTheme } from '@nextui-org/react';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { Navbar, Link, Text } from '@nextui-org/react';
 import { FaApple, FaSpotify, FaYoutube } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import ThemeToggle from './ThemeToggle.jsx';
 
 const nav = ({ Home, About, Press, Media }) => {
   const collapseItems = ['Home', 'Music', 'Press Photos', 'Media'];
@@ -74,6 +69,9 @@ const nav = ({ Home, About, Press, Media }) => {
           >
             <FaYoutube />
           </Link>
+        </Navbar.Item>
+        <Navbar.Item>
+          <ThemeToggle />
         </Navbar.Item>
       </Navbar.Content>
     </Navbar>

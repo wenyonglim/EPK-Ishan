@@ -1,23 +1,41 @@
-# Electronic Press Kits (EPKs) for artists, effectively showcasing their work and achievements to target audiences in the real world
+# Ishan Electronic Press Kit
 
-[Live view](https://epk-ishan.vercel.app/)
+[Live site](https://epk-ishan.vercel.app/)
 
-Project was built using Next.js (v13.1.2), a powerful React-based framework that provides server-rendering, static site generation, and efficient build-time optimizations. The website's UI components and design system were developed using a combination of Headless UI (v1.7.7), Next UI (v1.0.0-beta.12), and DaisyUI (v2.49.0), which offer highly customizable, accessible, and responsive components for building intuitive and visually appealing user interfaces.
+This repo contains a small Next.js website for Ishan's electronic press kit. The app lives in `epk-website/` and is intended to stay lightweight: artist bio, press photos, media links, and streaming/social links.
 
-For the CSS and styling, the project leveraged Tailwind CSS (v3.2.4), a utility-first CSS framework that enables rapid styling with minimal effort. PostCSS (v8.4.21) and Autoprefixer (v10.4.13) were used as part of the development process, ensuring that the generated CSS is compatible with various browsers and devices.
+## Current Stack
 
-To add rich motion and animations to the user interface, the project utilized the Framer Motion (v8.5.3) library, which is a powerful and flexible animation library for React.
+- Next.js 15.5.18 using the Pages Router
+- React 18
+- Tailwind CSS 3 and DaisyUI 2
+- NextUI `1.0.0-beta.12` for the existing component styling
+- Framer Motion for page animations
+- Node 20 for Vercel/local consistency
 
-For handling icons, React Icons (v4.7.1) was utilized, offering a vast collection of popular icon sets such as FontAwesome, Material Design, and more.
+## Local Development
 
-The project also employed Sharp (v0.31.3) to process images efficiently, optimizing performance and improving the user experience. With the use of the @next/font (v13.1.2) package, web fonts were optimized and served efficiently.
+```bash
+cd epk-website
+npm install
+npm run dev
+```
 
-To maintain code quality and adherence to best practices, the project made use of ESLint (v8.32.0) and the ESLint configuration for Next.js (v13.1.2). This helped in identifying potential issues and keeping the codebase clean and consistent.
+Then open `http://localhost:3000`.
 
+## Checks
 
+```bash
+npm run lint
+npm run build
+npm audit --omit=dev
+```
 
-Things I could Add in the future: 
-- Instagram grid
-- Blog by Ishan
-- Contact page
-- Links to other social medias
+The app currently builds and lints cleanly. `npm audit --omit=dev` may still report a moderate PostCSS advisory from Next's bundled internal dependency; forcing npm to override it creates an invalid dependency tree, so leave that to a future Next patch unless the advisory becomes exploitable for this app.
+
+## Useful Future Updates
+
+- Refresh the artist bio with Ishan's current release story.
+- Add Instagram or other current social links.
+- Add a contact/booking page.
+- Replace the legacy NextUI beta components with HeroUI or simpler local components when doing a larger redesign.

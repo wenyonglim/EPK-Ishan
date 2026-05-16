@@ -1,27 +1,94 @@
 import '@/styles/globals.css';
-import { createTheme, NextUIProvider, Text } from '@nextui-org/react';
+import { createTheme, NextUIProvider } from '@nextui-org/react';
+import { useEffect, useMemo, useState } from 'react';
+import {
+  getTimeBasedTheme,
+  THEME_MODES,
+  ThemeModeContext,
+} from '@/components/ThemeContext.jsx';
+
+const STORAGE_KEY = 'epk-theme-mode';
 
 export default function App({ Component, pageProps }) {
+  const [mode, setMode] = useState('auto');
+  const [autoTheme, setAutoTheme] = useState('dark');
+
+  useEffect(() => {
+    const savedMode = window.localStorage.getItem(STORAGE_KEY);
+
+    if (THEME_MODES.includes(savedMode)) {
+      setMode(savedMode);
+    }
+
+    setAutoTheme(getTimeBasedTheme());
+  }, []);
+
+  useEffect(() => {
+    if (mode !== 'auto') {
+      return undefined;
+    }
+
+    const interval = window.setInterval(() => {
+      setAutoTheme(getTimeBasedTheme());
+    }, 60 * 1000);
+
+    return () => window.clearInterval(interval);
+  }, [mode]);
+
+  const resolvedTheme = mode === 'auto' ? autoTheme : mode;
+  const theme = resolvedTheme === 'light' ? lightTheme : darkTheme;
+
+  useEffect(() => {
+    document.documentElement.dataset.themeMode = resolvedTheme;
+  }, [resolvedTheme]);
+
+  const themeModeValue = useMemo(
+    () => ({
+      mode,
+      resolvedTheme,
+      cycleMode: () => {
+        setMode((currentMode) => {
+          const nextMode =
+            THEME_MODES[(THEME_MODES.indexOf(currentMode) + 1) % THEME_MODES.length];
+          window.localStorage.setItem(STORAGE_KEY, nextMode);
+          return nextMode;
+        });
+      },
+    }),
+    [mode, resolvedTheme]
+  );
+
   return (
-    // 2. Use at the root of your app
-    <NextUIProvider theme={myDarkTheme}>
-      <Component {...pageProps} />
+    <NextUIProvider theme={theme}>
+      <ThemeModeContext.Provider value={themeModeValue}>
+        <Component {...pageProps} />
+      </ThemeModeContext.Provider>
     </NextUIProvider>
   );
 }
 
-// Custom theme and pass  custom theme values
-const myDarkTheme = createTheme({
+const darkTheme = createTheme({
   type: 'dark',
   theme: {
     colors: {
-      // brand colors
       background: '#1d1d1d',
       text: '#fff',
-      // you can also create your own color
       myDarkColor: '#ff4ecd',
-      // ...  more colors
       link: '#B583E7',
+    },
+    space: {},
+    fonts: {},
+  },
+});
+
+const lightTheme = createTheme({
+  type: 'light',
+  theme: {
+    colors: {
+      background: '#f7f2ec',
+      text: '#201a1f',
+      myDarkColor: '#c02fbf',
+      link: '#7f3fc5',
     },
     space: {},
     fonts: {},
